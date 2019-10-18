@@ -1,0 +1,199 @@
+﻿.top {
+    vertical-align: top;
+}
+
+.p-t-10 {
+    padding-top: 10px !important;
+}
+
+.p-f-10 {
+    padding: 5px;
+}
+
+.p-h-20 {
+    padding: 0px 20px;
+}
+
+.p-v-20 {
+    padding: 20px 0px;
+}
+
+.p-h-5 {
+    padding: 0px 5px;
+}
+
+.p-h-10 {
+    padding: 0px 10px;
+}
+
+.texto {
+    padding: 0px 5px;
+    margin: 0;
+    margin-top: 5px;
+    font-family: cursive;
+}
+
+.m-b-5 {
+    margin-bottom: -5px;
+}
+
+.p-f-0 {
+    padding: 0px !important;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row:after,
+.row:before {
+    display: table;
+    content: " ";
+}
+
+.row:after {
+    clear: both;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    float: left;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-11 {
+    width: 91.66666667%;
+}
+
+.col-10 {
+    width: 83.33333333%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-8 {
+    width: 66.66666667%;
+}
+
+.col-7 {
+    width: 58.33333333%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-5 {
+    width: 41.66666667%;
+}
+
+.col-4 {
+    width: 33.33333333%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-2 {
+    width: 16.66666667%;
+}
+
+.col-1 {
+    width: 8.33333333%;
+}
+
+.mini-panel {
+    border: 1px solid rgba(112, 112, 112, 0.12);
+    padding: 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: 5px;
+    background-color: #ffffff !important;
+}
+
+.p-f-5 {
+    padding: 5px;
+}
+
+
+/*Easy pie chart*/
+
+.easypiechart {
+    display: inline-block;
+    height: 60px;
+    position: relative;
+    text-align: center;
+    width: 70px;
+}
+
+.easypiechart canvas {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.easypiechart .percent {
+    color: #212121;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 65px;
+    z-index: 2;
+}
+
+.easypiechart .percent:after {
+    content: "%";
+    font-size: 14px;
+    margin-left: 1px;
+}
+
+.easypiechart.easypiechart-widget-pie {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.pie-chart>span {
+    left: 0;
+    margin-top: -2px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.easypiechart>span>img {
+    height: 60%;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60%;
+}

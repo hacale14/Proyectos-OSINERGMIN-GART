@@ -1,0 +1,55 @@
+E:\Fuentes PIMAY\Cobranzas\ConDB\bin\Release\ConDB.dll.config
+E:\Fuentes PIMAY\Cobranzas\ConDB\bin\Release\ConDB.dll
+E:\Fuentes PIMAY\Cobranzas\ConDB\bin\Release\ConDB.pdb
+E:\Fuentes PIMAY\Cobranzas\ConDB\bin\Release\MySql.Data.dll
+E:\Fuentes PIMAY\Cobranzas\ConDB\bin\Release\MySql.Web.dll
+E:\Fuentes PIMAY\Cobranzas\ConDB\bin\Release\Newtonsoft.Json.dll
+E:\Fuentes PIMAY\Cobranzas\ConDB\obj\Release\ResolveAssemblyReference.cache
+E:\Fuentes PIMAY\Cobranzas\ConDB\obj\Release\ConDB.Resources.resources
+E:\Fuentes PIMAY\Cobranzas\ConDB\obj\Release\ConDB.vbproj.GenerateResource.Cache
+E:\Fuentes PIMAY\Cobranzas\ConDB\obj\Release\ConDB.dll
+E:\Fuentes PIMAY\Cobranzas\ConDB\obj\Release\ConDB.pdb
+F:\Fuentes EM\Cobranzas\ConDB\bin\Release\ConDB.dll.config
+F:\Fuentes EM\Cobranzas\ConDB\bin\Release\ConDB.dll
+F:\Fuentes EM\Cobranzas\ConDB\bin\Release\ConDB.pdb
+F:\Fuentes EM\Cobranzas\ConDB\bin\Release\MySql.Data.dll
+F:\Fuentes EM\Cobranzas\ConDB\bin\Release\MySql.Web.dll
+F:\Fuentes EM\Cobranzas\ConDB\bin\Release\Newtonsoft.Json.dll
+F:\Fuentes EM\Cobranzas\ConDB\obj\Release\ResolveAssemblyReference.cache
+F:\Fuentes EM\Cobranzas\ConDB\obj\Release\ConDB.Resources.resources
+F:\Fuentes EM\Cobranzas\ConDB\obj\Release\ConDB.vbproj.GenerateResource.Cache
+F:\Fuentes EM\Cobranzas\ConDB\obj\Release\ConDB.dll
+F:\Fuentes EM\Cobranzas\ConDB\obj\Release\ConDB.pdb
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\bin\Release\ConDB.dll.config
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\bin\Release\ConDB.dll
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\bin\Release\ConDB.pdb
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\bin\Release\MySql.Data.dll
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\bin\Release\MySql.Web.dll
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\bin\Release\Newtonsoft.Json.dll
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\obj\Release\ResolveAssemblyReference.cache
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\obj\Release\ConDB.Resources.resources
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\obj\Release\ConDB.vbproj.GenerateResource.Cache
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\obj\Release\ConDB.dll
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\obj\Release\ConDB.pdb
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Release\ConDB.dll.config
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Release\ConDB.dll
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Release\ConDB.pdb
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Release\MySql.Data.dll
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Release\MySql.Web.dll
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Release\Newtonsoft.Json.dll
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\obj\Release\ResolveAssemblyReference.cache
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\obj\Release\ConDB.Resources.resources
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\obj\Release\ConDB.vbproj.GenerateResource.Cache
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\obj\Release\ConDB.dll
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\obj\Release\ConDB.pdb
+D:\pimay\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Release\ConDB.dll.config
+D:\pimay\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Release\ConDB.dll
+D:\pimay\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Release\ConDB.pdb
+D:\pimay\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Release\MySql.Data.dll
+D:\pimay\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Release\MySql.Web.dll
+D:\pimay\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Release\Newtonsoft.Json.dll
+D:\pimay\Desarrollo\AspNET2008\Fuente\sagec\ConDB\obj\Release\ResolveAssemblyReference.cache
+D:\pimay\Desarrollo\AspNET2008\Fuente\sagec\ConDB\obj\Release\ConDB.Resources.resources
+D:\pimay\Desarrollo\AspNET2008\Fuente\sagec\ConDB\obj\Release\ConDB.vbproj.GenerateResource.Cache
+D:\pimay\Desarrollo\AspNET2008\Fuente\sagec\ConDB\obj\Release\ConDB.dll
+D:\pimay\Desarrollo\AspNET2008\Fuente\sagec\ConDB\obj\Release\ConDB.pdb

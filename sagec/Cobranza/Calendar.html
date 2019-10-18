@@ -1,0 +1,35 @@
+<html> 
+<heaad>
+<link href="sistema.css" rel="stylesheet" type="text/css" />
+<link href="calendar-blue.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/scriptsSistema.js" charset="iso-8859-1"></script>
+<script type="text/javascript" src="scripts/prototype.js"></script>
+<script type="text/javascript" src="scripts/calendar.js"></script>
+<script type="text/javascript" src="scripts/calendar-utils.js"></script>
+<script type="text/javascript" src="scripts/calendar-es.js"></script>
+</head>
+<body>
+<table align="center" width="90%">                        
+                        <tr><td>
+                                <table width="100%" align="center" id="venta">
+                                <tr>
+                                    <td width="120px">Fecha Inicio: </td>
+                                    <td><input type="text" name="fechaini" id="fechaini"/><img id="fecha" src="images/calendario.png" alt="calendario" 
+                                    height="24" width="24" 
+                                    onclick="return showCalendar('fecha','fechaini','%d/%m/%Y','24', true);"/></td>
+                                    <td width="120px">Fecha Fin: </td>
+                                    <td><input type="text" name="fechafin" id="fechafin"/><img id="fecha" src="images/calendario.png" alt="calendario" 
+                                    height="24" width="24" 
+                                    onclick="return showCalendar('fecha','fechafin','%d/%m/%Y','24', true);"/></td>
+                                </tr>                                
+                                <tr>
+                                    <td width="120px">Proveedor: </td>
+                                    <td>
+                                    	<input type="text" name="proveedor" id="proveedor" value="" disabled="disabled" size="40px"/>
+                                    	<input type="hidden" value="" name="proveedor_id" id="proveedor_id"/>
+                                    	<input type="button" name="btnSeleccione" value="Seleccione" onclick="javascript: seleccione_proveedor()"/>
+                                    </td>
+                                </tr>                                
+                                </table>
+</body>
+</html>

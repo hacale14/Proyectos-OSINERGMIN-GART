@@ -1,0 +1,110 @@
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\ConDB\bin\Debug\ConDB.dll.config
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\ConDB\bin\Debug\ConDB.dll
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\ConDB\bin\Debug\ConDB.pdb
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\ConDB\bin\Debug\MySql.Data.dll
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\ConDB\bin\Debug\MySql.Web.dll
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\ConDB\bin\Debug\Newtonsoft.Json.dll
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\ConDB\obj\Debug\ResolveAssemblyReference.cache
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\ConDB\obj\Debug\ConDB.Resources.resources
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\ConDB\obj\Debug\ConDB.vbproj.GenerateResource.Cache
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\ConDB\obj\Debug\ConDB.dll
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\ConDB\obj\Debug\ConDB.pdb
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\bin\Debug\ConDB.dll.config
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\bin\Debug\ConDB.dll
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\bin\Debug\ConDB.pdb
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\bin\Debug\MySql.Data.dll
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\bin\Debug\MySql.Web.dll
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\bin\Debug\Newtonsoft.Json.dll
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\obj\Debug\ResolveAssemblyReference.cache
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\obj\Debug\ConDB.Resources.resources
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\obj\Debug\ConDB.vbproj.GenerateResource.Cache
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\obj\Debug\ConDB.dll
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\ConDB\obj\Debug\ConDB.pdb
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\ConDB\bin\Debug\ConDB.dll.config
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\ConDB\bin\Debug\ConDB.dll
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\ConDB\bin\Debug\ConDB.pdb
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\ConDB\bin\Debug\MySql.Data.dll
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\ConDB\bin\Debug\MySql.Web.dll
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\ConDB\bin\Debug\Newtonsoft.Json.dll
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\ConDB\obj\Debug\ResolveAssemblyReference.cache
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\ConDB\obj\Debug\ConDB.Resources.resources
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\ConDB\obj\Debug\ConDB.vbproj.GenerateResource.Cache
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\ConDB\obj\Debug\ConDB.dll
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\ConDB\obj\Debug\ConDB.pdb
+C:\Users\76188778\Desktop\valsys\Valsys\ConDB\bin\Debug\ConDB.dll.config
+C:\Users\76188778\Desktop\valsys\Valsys\ConDB\bin\Debug\ConDB.dll
+C:\Users\76188778\Desktop\valsys\Valsys\ConDB\bin\Debug\ConDB.pdb
+C:\Users\76188778\Desktop\valsys\Valsys\ConDB\bin\Debug\MySql.Data.dll
+C:\Users\76188778\Desktop\valsys\Valsys\ConDB\bin\Debug\MySql.Web.dll
+C:\Users\76188778\Desktop\valsys\Valsys\ConDB\bin\Debug\Newtonsoft.Json.dll
+C:\Users\76188778\Desktop\valsys\Valsys\ConDB\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\76188778\Desktop\valsys\Valsys\ConDB\obj\Debug\ConDB.Resources.resources
+C:\Users\76188778\Desktop\valsys\Valsys\ConDB\obj\Debug\ConDB.vbproj.GenerateResource.Cache
+C:\Users\76188778\Desktop\valsys\Valsys\ConDB\obj\Debug\ConDB.dll
+C:\Users\76188778\Desktop\valsys\Valsys\ConDB\obj\Debug\ConDB.pdb
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\ConDB\bin\Debug\ConDB.dll.config
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\ConDB\bin\Debug\ConDB.dll
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\ConDB\bin\Debug\ConDB.pdb
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\ConDB\bin\Debug\MySql.Data.dll
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\ConDB\bin\Debug\MySql.Web.dll
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\ConDB\bin\Debug\Newtonsoft.Json.dll
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\ConDB\obj\Debug\ResolveAssemblyReference.cache
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\ConDB\obj\Debug\ConDB.Resources.resources
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\ConDB\obj\Debug\ConDB.vbproj.GenerateResource.Cache
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\ConDB\obj\Debug\ConDB.dll
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\ConDB\obj\Debug\ConDB.pdb
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\ConDB\bin\Debug\ConDB.dll.config
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\ConDB\bin\Debug\ConDB.dll
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\ConDB\bin\Debug\ConDB.pdb
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\ConDB\bin\Debug\MySql.Data.dll
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\ConDB\bin\Debug\MySql.Web.dll
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\ConDB\bin\Debug\Newtonsoft.Json.dll
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\ConDB\obj\Debug\ResolveAssemblyReference.cache
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\ConDB\obj\Debug\ConDB.Resources.resources
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\ConDB\obj\Debug\ConDB.vbproj.GenerateResource.Cache
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\ConDB\obj\Debug\ConDB.dll
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\ConDB\obj\Debug\ConDB.pdb
+E:\Fuente\Valsys\ConDB\bin\Debug\ConDB.dll.config
+E:\Fuente\Valsys\ConDB\bin\Debug\ConDB.dll
+E:\Fuente\Valsys\ConDB\bin\Debug\ConDB.pdb
+E:\Fuente\Valsys\ConDB\bin\Debug\MySql.Data.dll
+E:\Fuente\Valsys\ConDB\bin\Debug\MySql.Web.dll
+E:\Fuente\Valsys\ConDB\bin\Debug\Newtonsoft.Json.dll
+E:\Fuente\Valsys\ConDB\obj\Debug\ResolveAssemblyReference.cache
+E:\Fuente\Valsys\ConDB\obj\Debug\ConDB.Resources.resources
+E:\Fuente\Valsys\ConDB\obj\Debug\ConDB.vbproj.GenerateResource.Cache
+E:\Fuente\Valsys\ConDB\obj\Debug\ConDB.dll
+E:\Fuente\Valsys\ConDB\obj\Debug\ConDB.pdb
+E:\Fuente\sagec\ConDB\bin\Debug\ConDB.dll.config
+E:\Fuente\sagec\ConDB\bin\Debug\ConDB.dll
+E:\Fuente\sagec\ConDB\bin\Debug\ConDB.pdb
+E:\Fuente\sagec\ConDB\bin\Debug\MySql.Data.dll
+E:\Fuente\sagec\ConDB\bin\Debug\MySql.Web.dll
+E:\Fuente\sagec\ConDB\bin\Debug\Newtonsoft.Json.dll
+E:\Fuente\sagec\ConDB\obj\Debug\ResolveAssemblyReference.cache
+E:\Fuente\sagec\ConDB\obj\Debug\ConDB.Resources.resources
+E:\Fuente\sagec\ConDB\obj\Debug\ConDB.vbproj.GenerateResource.Cache
+E:\Fuente\sagec\ConDB\obj\Debug\ConDB.dll
+E:\Fuente\sagec\ConDB\obj\Debug\ConDB.pdb
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Debug\ConDB.dll.config
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Debug\ConDB.dll
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Debug\ConDB.pdb
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Debug\MySql.Data.dll
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Debug\MySql.Web.dll
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Debug\Newtonsoft.Json.dll
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\obj\Debug\ResolveAssemblyReference.cache
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\obj\Debug\ConDB.Resources.resources
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\obj\Debug\ConDB.vbproj.GenerateResource.Cache
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\obj\Debug\ConDB.dll
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\obj\Debug\ConDB.pdb
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Debug\ConDB.dll.config
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Debug\ConDB.dll
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Debug\ConDB.pdb
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Debug\MySql.Data.dll
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Debug\MySql.Web.dll
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\bin\Debug\Newtonsoft.Json.dll
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\obj\Debug\ResolveAssemblyReference.cache
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\obj\Debug\ConDB.Resources.resources
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\obj\Debug\ConDB.vbproj.GenerateResource.Cache
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\obj\Debug\ConDB.dll
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\ConDB\obj\Debug\ConDB.pdb

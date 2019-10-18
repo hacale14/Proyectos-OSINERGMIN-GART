@@ -1,0 +1,1308 @@
+﻿.ButtonBPM
+{
+    border: 1px solid #000000;
+    background-color: #E40134;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.ButtonBPM:hover
+{
+    border: solid 1px black;
+    background-color: #FF5151;
+    color: #000000;
+    font-weight: bold;
+    font-size: 11px;
+    cursor: hand;
+}
+
+
+.modalPopup {
+	background-color:#ffffdd;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width:250px;
+}
+
+
+LEGEND{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+	COLOR: #66594d;
+	FONT-FAMILY: Arial;
+}
+TABLE{
+	FONT-SIZE: 11px;
+	COLOR: #000000;
+	font-family: sans-serif;
+	width: -moz-max-content;width:-webkit-max-content;width: intrinsic;width: -o-max-content;width: -ms-max-content;;
+    top: 0px;
+    
+}
+TD{
+	FONT-SIZE: 11px;
+	font-family:sans-serif;
+	text-align: left;
+}
+
+.GridHeader	
+{	color: white;	
+	position: relative;		
+	top: expression(this.offsetParent.scrollTop - 2);	
+	background-color: #4d7893;		
+	font-size: 10px;}
+.GridFooter 
+{ POSITION: relative;  
+  BACKGROUND-COLOR: #766964 }
+  
+.normalRow
+{
+    background-color:black;/* You can change the background Color to normal Gridview Back Color */
+    /*cursor:pointer;/* You can change cursor pointer to default, Pointer etc */
+    
+    font-family : Verdana;
+	font-size :10px;
+	color: #766964;
+	font-weight:bold ;
+}
+.highlightRow
+{
+	background-color: Silver; /* You can change the background Color of the row to whatever color you want. You can also give Hexadecimal color code also */ /*cursor:pointer;/* You can change cursor pointer to default, Pointer etc */ /*background: #ffffff;*/
+	font-family: Verdana;
+	font-size: 12px;
+	color: black;
+	font-weight: bold;
+	font-family: Verdana;
+}	
+.MstPag6
+        {
+            width: 100%;            
+            background-color: white;
+        }
+.MstPag7
+{  
+	height: 3px;
+    background-color: #FFFFCC;
+    cursor:pointer; 
+}
+.MstPag9
+{
+    width: 100%;
+    background-color: #CCCCCC;
+}        
+.MstPag10
+{            width: 8%;
+}
+.MstPag1
+{
+    text-decoration: underline;
+}
+.MstCli1
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #ffffff;
+    TEXT-INDENT: 1px;
+    BACKGROUND-COLOR: #cc0000;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.style1
+{
+    width: 80%;
+}
+.cssAsig1
+{
+    width: 26px;
+}
+.cssAsig2
+{
+    width: 400px;
+}
+.clsOptions{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+	COLOR: #cc0000;
+	FONT-FAMILY: Arial;
+}
+/*-IMC-*/
+div#tbl-container{
+	width: 100%;
+	height: 305px;
+	overflow:scroll  
+	/*overflow-y: scroll;
+	overflow-x: hidden;	
+	scrollbar-base-color:#ffeaff;
+	border: 1px solid #66594d;*/
+}
+.sort-table thead th{
+	border-left:1px solid #FFF;
+	height: 20;
+}
+.sort-table thead th{
+	cursor: default;
+}
+.tableTitle{
+    FONT-WEIGHT: bold;
+    COLOR: #ffffff;
+    TEXT-INDENT: 4pt;
+    LINE-HEIGHT: 19px;
+    BACKGROUND-COLOR: #cc0000;
+}
+.tableSubTitle{
+    FONT-WEIGHT: bold;
+    COLOR: #66594d;
+    TEXT-INDENT: 4pt;
+    LINE-HEIGHT: 19px;
+    BACKGROUND-COLOR: #e0d6b5;
+}
+.tableTitleMarron{
+    FONT-WEIGHT: bold;
+    COLOR: #ffffff;
+    TEXT-INDENT: 4pt;
+    LINE-HEIGHT: 19px;
+    BACKGROUND-COLOR: #66594d;
+}
+.tableSubTitleEVAL{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    COLOR: #66594d;
+    TEXT-INDENT: 1px;
+    LINE-HEIGHT: 17px;
+    BACKGROUND-COLOR: #e0d6b5;
+}
+
+.tableTitleEVAL{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #ffffff;
+    TEXT-INDENT: 1px;
+    BACKGROUND-COLOR: #003366;
+    cursor:pointer;
+}
+
+
+INPUT{
+	FONT-SIZE: 11px;
+	COLOR: #000000;
+	FONT-FAMILY: Arial;
+}
+SELECT{
+	FONT-SIZE: 11px;
+	COLOR: #000000;
+	FONT-FAMILY: Arial;
+}
+check{
+	FONT-SIZE: 11px;
+	COLOR: #000000;
+	FONT-FAMILY: Arial;
+}
+TEXTAREA{
+	FONT-SIZE: 11px;
+	COLOR: #000000;
+	FONT-FAMILY: Arial;
+}
+A.opcionesAreas:visited{
+	COLOR: #000000;
+	TEXT-DECORATION: none;
+}
+A.opcionesAreas:link{
+	COLOR: #000000;
+	TEXT-DECORATION: none;
+}
+A.opcionesAreas:active{
+	COLOR: #66594d;
+}
+A.opcionesAreas:hover{
+	COLOR: #66594d;
+}
+A.linkSubOpcion:visited{
+	FONT-WEIGHT: bold;
+	COLOR: #ffffff;
+	TEXT-DECORATION: none;
+}
+A.linkSubOpcion:link{
+	FONT-WEIGHT: bold;
+	COLOR: #ffffff;
+	TEXT-DECORATION: none;
+}
+A.linkSubOpcion:active{
+	FONT-WEIGHT: bold;
+	COLOR: #000000;
+	TEXT-DECORATION: underline;
+}
+A.linkSubOpcion:hover{
+	FONT-WEIGHT: bold;
+	COLOR: #000000;
+	TEXT-DECORATION: underline
+}
+A.LinkOpcionesSolVar:visited{
+	FONT-WEIGHT: bold;
+	COLOR: #000000;
+	TEXT-DECORATION: none;
+}
+A.LinkOpcionesSolVar:link{
+	FONT-WEIGHT: bold;
+	COLOR: #000000;
+	TEXT-DECORATION: none;
+}
+A.LinkOpcionesSolVar:active{
+	FONT-WEIGHT: bold;
+	COLOR: #cc0000;
+	TEXT-DECORATION: underline;
+}
+A.LinkOpcionesSolVar:hover{
+	FONT-WEIGHT: bold;
+	COLOR: #cc0000;
+	TEXT-DECORATION: underline;
+}
+A.tipoSolicitudSinPendientes:visited{
+    COLOR: #66594d;
+    TEXT-DECORATION: none;
+}
+A.tipoSolicitudSinPendientes:link{
+    COLOR: #66594d;
+    TEXT-DECORATION: none;
+}
+A.tipoSolicitudSinPendientes:active{
+    COLOR: #cc0000;
+    TEXT-DECORATION: underline;
+}
+A.tipoSolicitudSinPendientes:hover{
+    COLOR: #cc0000;
+    TEXT-DECORATION: underline;
+}
+A.tipoSolicitudConPendientes:visited{
+    FONT-WEIGHT: bold;
+    COLOR: #66594d;
+    TEXT-DECORATION: none;
+}
+A.tipoSolicitudConPendientes:link{
+    FONT-WEIGHT: bold;
+    COLOR: #66594d;
+    TEXT-DECORATION: none;
+}
+A.tipoSolicitudConPendientes:active{
+    FONT-WEIGHT: bold;
+    COLOR: #cc0000;
+    TEXT-DECORATION: underline;
+}
+A.tipoSolicitudConPendientes:hover{
+    FONT-WEIGHT: bold;
+    COLOR: #cc0000;
+    TEXT-DECORATION: underline;
+}
+A.labelTextoAccion:hover{
+    TEXT-DECORATION: underline;
+}
+A.labelTextoAccion:active{
+    TEXT-DECORATION: underline;
+}
+A.labelTextoAccion:visited{
+    TEXT-DECORATION: none;
+}
+A.labelTextoAccion:link{
+    TEXT-DECORATION: none;
+}
+IMG{
+    CURSOR: hand;
+	width: 14px;
+    text-align: center;
+    margin-left: 0px;
+}
+#boxFormato{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    BORDER-LEFT: #000000 1px solid;
+    BORDER-BOTTOM: #000000 1px solid;
+}
+#boxMain{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    BORDER-LEFT: #000000 1px solid;
+    BORDER-BOTTOM: #000000 1px solid;
+}
+#boxCronograma{
+    BACKGROUND-COLOR: #66594d;
+}
+/*#oDiv{
+    OVERFLOW-Y: scroll;
+    OVERFLOW-X: hidden;
+}*/
+#leyendAviso{
+    FONT-WEIGHT: lighter;
+    COLOR: #cc0000;
+}
+#textoAviso{
+    COLOR: #cc0000;
+}
+#textoGris{
+    FONT-SIZE: x-small;
+    COLOR: #66594d;
+}
+.formatoTitle{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 18px;
+    TEXT-ALIGN: center;
+}
+.formatoSubTitle_01{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 16px;
+    TEXT-TRANSFORM: uppercase;
+    TEXT-ALIGN: center;
+}
+.formatoSubTitle_02{
+    FONT-SIZE: 14px;
+    TEXT-ALIGN: center;
+}
+.inputText{
+    BORDER-RIGHT: black 1px double;
+    BORDER-TOP: black 1px double;
+    BORDER-LEFT: black 1px double;
+    BORDER-BOTTOM: black 1px double;
+}
+.fondoOpcProcesos{
+    BACKGROUND-COLOR: #7878b0;
+}
+.fondoTipoSolicitud{
+    BORDER-RIGHT: #66594d 1px dotted;
+    BACKGROUND-COLOR: #f5f2e7;
+}
+.linkSubOpcion{
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Arial;
+}
+.tableTitleCurriculum{
+    FONT-WEIGHT: bold;
+    COLOR: #ffffff;
+    TEXT-INDENT: 4pt;
+    LINE-HEIGHT: 19px
+}
+
+
+.tableSubTitleCurriculumn{
+    FONT-WEIGHT: bold;
+    COLOR: #66594d;
+    TEXT-INDENT: 4pt;
+    LINE-HEIGHT: 19px;
+}
+
+
+
+.tableSubTitleMarron_{
+    FONT-WEIGHT: bold;
+    COLOR: #ffffff;
+    LINE-HEIGHT: 19px;
+    BACKGROUND-COLOR: #66594d;
+}
+.tableSubTitleMarron{
+    FONT-WEIGHT: bold;
+    COLOR: #ffffff;
+    TEXT-INDENT: 4pt;
+    LINE-HEIGHT: 19px;
+    BACKGROUND-COLOR: #66594d;
+}
+.tableHeaderMarron{
+    FONT-WEIGHT: bold;
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #66594d;
+}
+.tableSubTitleAzul{
+    FONT-WEIGHT: bold;
+    COLOR: #ffffff;
+    TEXT-INDENT: 4pt;
+    LINE-HEIGHT: 19px;
+    BACKGROUND-COLOR: #66594d;
+}
+.tableSubTitleNaranja{
+    FONT-WEIGHT: bold;
+    COLOR: #ffffff;
+    TEXT-INDENT: 4pt;
+    LINE-HEIGHT: 19px;
+    BACKGROUND-COLOR: #666699;
+}
+.tableSubTitleRight{
+    BORDER-RIGHT: #ffffff 1px dotted;
+    FONT-WEIGHT: bold;
+    COLOR: #66594d;
+    TEXT-INDENT: 4pt;
+    BACKGROUND-COLOR: #e0d6b5;
+}
+.tableSubTitleHE{
+    FONT-WEIGHT: bold;
+    COLOR: #66594d;
+    BACKGROUND-COLOR: #e0d6b5;
+}
+.labelHead{
+    FONT-WEIGHT: bold;
+    COLOR: #66594d;
+    LINE-HEIGHT: 19px;
+    BACKGROUND-COLOR: #e0d6b5;
+    TEXT-ALIGN: center;
+}
+.labelHeadLeft{
+    FONT-WEIGHT: bold;
+    COLOR: #66594d;
+    LINE-HEIGHT: 19px;
+    BACKGROUND-COLOR: #e0d6b5;
+    TEXT-ALIGN: center;
+}
+.labelHeadRight{
+    BORDER-RIGHT: #ffffff 1px solid;
+    FONT-WEIGHT: bold;
+    COLOR: #66594d;
+    LINE-HEIGHT: 19px;
+    BACKGROUND-COLOR: #e0d6b5;
+    TEXT-ALIGN: center;
+}
+.labelHeadBandejaRight{
+    BORDER-RIGHT: #ffffff 1px solid;
+    FONT-WEIGHT: bold;
+    COLOR: #66594d;
+    LINE-HEIGHT: 19px;
+    BACKGROUND-COLOR: #f5f2e7;
+    TEXT-ALIGN: center;
+}
+.labelHeadBandejaLeft{
+    BORDER-RIGHT: #ffffff 1px solid;
+    FONT-WEIGHT: bold;
+    COLOR: #66594d;
+    BACKGROUND-COLOR: #f5f2e7;
+}
+.labelHeadBandejaRowSpan{
+    BORDER-RIGHT: #ffffff 1px solid;
+    FONT-WEIGHT: bold;
+    COLOR: #66594d;
+    BORDER-BOTTOM: #ffffff 1px solid;
+    BACKGROUND-COLOR: #e0d6b5;
+    TEXT-ALIGN: center;
+}
+.labelHeadBandejaRightTotal{
+    BORDER-RIGHT: #ffffff 1px solid;
+    COLOR: #cc0000;
+    BACKGROUND-COLOR: #f5f2e7;
+    TEXT-ALIGN: center;
+}
+.labelHeadBandeja{
+    FONT-WEIGHT: bold;
+    COLOR: #66594d;
+    LINE-HEIGHT: 19px;
+    BACKGROUND-COLOR: #f5f2e7;
+    TEXT-ALIGN: center;
+}
+.labelDetalleBandeja{
+    COLOR: #000000;
+    BORDER-BOTTOM: #e0d6b5 1px solid;
+}
+.lineaDetalle{
+	COLOR: #000000;
+	FONT-SIZE: 9px;
+	BORDER-BOTTOM: #e0d6b5 1px solid;
+}
+.lineaDetalleError
+{
+	color: #cc0000;
+	font-size: 9px;
+}
+.lineaDetalleModificado{
+	COLOR: #000000;
+	FONT-SIZE: 10px;
+	BORDER-BOTTOM: #7878b0 1px solid;
+}
+.lineaDetalleAutorizado{
+	COLOR: #000000;
+	FONT-SIZE: 10px;
+	BORDER-BOTTOM: #cc0000 1px solid;
+}
+.labelDetalleBandejaEVAL{
+    FONT-SIZE: 9px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #e0d6b5 1px solid;
+}
+.labelDetalleBandeja_tema{
+    FONT-SIZE: 9px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #e0d6b5 1px solid;
+}
+.labelDetalleBandeja01{
+    COLOR: #000000;
+    BORDER-BOTTOM: #cc0000 1px solid;
+}
+.labelDetalleBandejaNL{
+    COLOR: #000000;
+    BORDER-BOTTOM: #66594d 1px solid;
+    BACKGROUND-COLOR: #f5f2e7;
+}
+.labelDetalleBandejaRL{
+    TEXT-TRANSFORM: uppercase;
+    BORDER-BOTTOM: #cc0000 1px solid;
+    BACKGROUND-COLOR: #f5f2e7;
+}
+.labelDetalleBandeja_Off{
+    COLOR: #000000;
+    BORDER-BOTTOM: #66594d 1px dotted;
+}
+.labelDetalleBandeja_NoLaborale{
+    COLOR: #000000;
+    BORDER-BOTTOM: #e0d6b5 1px solid;
+    BACKGROUND-COLOR: #f5f2e7;
+}
+.labelImpreso{
+	COLOR: #000000;
+	BORDER-BOTTOM: #66594d 1px solid;
+	BACKGROUND-COLOR: #e0d6b5;
+}
+.labelDetalleBandejaMes{
+    COLOR: #000000;
+    BORDER-BOTTOM: #e0d6b5 1px solid;
+    BACKGROUND-COLOR: #e0d6b5;
+}
+.labelTextoAccion{
+    FONT-WEIGHT: bold;
+    COLOR: #cc0000;
+}
+.situacionBandeja{
+    BORDER-RIGHT: #66594d 1px solid;
+    PADDING-RIGHT: 1px;
+    BORDER-TOP: #66594d 1px solid;
+    PADDING-LEFT: 1px;
+    PADDING-BOTTOM: 1px;
+    BORDER-LEFT: #66594d 1px solid;
+    PADDING-TOP: 1px;
+    BORDER-BOTTOM: #66594d 1px solid;
+    BACKGROUND-COLOR: #ffffff;
+}
+.autorizadorAprobar{
+    BACKGROUND-COLOR: #003366;
+}
+.autorizadorRechazo{
+    BACKGROUND-COLOR: #cc0000;
+}
+.autorizadorNinguna{
+    BACKGROUND-COLOR: #f5f2e7;
+}
+.autorizadorTenue{
+    BORDER-BOTTOM: #e0d6b5 1px solid;
+    BACKGROUND-COLOR: #f5f2e7;
+}
+.autorizadorVerde{
+    BORDER-BOTTOM: #e0d6b5 1px solid;
+    BACKGROUND-COLOR: #a0b086;
+}
+.autorizadorVioleta{
+    BACKGROUND-COLOR: #7878b0;
+}
+.tableTitlePreview{
+    FONT-WEIGHT: bold;
+    BACKGROUND: #cc0000;
+    COLOR: #ffffff;
+    TEXT-INDENT: 4pt;
+    LINE-HEIGHT: 19px;
+}
+.labelHeadPreviewRight{
+    BORDER-RIGHT: #ffffff 1px solid;
+    FONT-WEIGHT: bold;
+    BACKGROUND: #e0d6b5;
+    COLOR: #66594d;
+    TEXT-ALIGN: center;
+}
+.labelHeadPreview{
+    FONT-WEIGHT: bold;
+    BACKGROUND: #e0d6b5;
+    COLOR: #66594d;
+    TEXT-ALIGN: center;
+}
+.boxPreview{
+    BORDER-RIGHT: #66594d 1px solid;
+    BORDER-TOP: #66594d 1px solid;
+    BORDER-LEFT: #66594d 1px solid;
+    BORDER-BOTTOM: #66594d 1px solid;
+}
+.textoSolicitud{
+    LINE-HEIGHT: 2;
+}
+.textoFirma{
+    LINE-HEIGHT: 1.2;
+}
+.disabledTD{
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #66594d;
+}
+.enabledTD{
+    BACKGROUND-COLOR: #ffffff;
+}
+.tipoSolicitudSinPendientes{
+    COLOR: #66594d;
+}
+.tipoSolicitudConPendientes{
+    FONT-WEIGHT: bold;
+    COLOR: #cc0000;
+}
+.idSolicitud{
+    FONT-SIZE: 16px;
+    COLOR: #cc0000;
+}
+.titleSolicitud{
+    FONT-SIZE: 20px;
+}
+.textoAviso{
+    FONT-SIZE: 9px;
+    COLOR: #cc0000;
+    FONT-FAMILY: Arial;
+}
+.textoVileta{
+    FONT-SIZE: 11px;
+    COLOR: #7878b0;
+    FONT-FAMILY: Arial;
+}
+.textoVioleta{
+    FONT-SIZE: 9px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial;
+}
+.textoBlanco{
+    COLOR: #ffffff;
+}
+.textoRojo{
+    FONT-SIZE: 9px;
+    COLOR: #CC0000;
+    FONT-FAMILY: verdana;
+}
+.textoNegroEVA{
+    FONT-SIZE: 8px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial;
+}
+.textoNegro{
+    FONT-SIZE: 9px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial;
+}
+.opcionesAreas{
+    COLOR: #000000;
+    LINE-HEIGHT: 18px;
+    TEXT-DECORATION: none;
+}
+.opcionesAreasOver{
+    TEXT-INDENT: 4px;
+    BACKGROUND-COLOR: #e0d6b5;
+}
+.textoVision{
+    TEXT-INDENT: 4px;
+}
+.textoComentario{
+    BORDER-RIGHT: #66594d 1px solid;
+    BORDER-TOP: #66594d 1px solid;
+    BORDER-LEFT: #66594d 1px solid;
+    COLOR: #ffffff;
+    TEXT-INDENT: 4px;
+    BORDER-BOTTOM: #66594d 1px solid;
+    BACKGROUND-COLOR: #666699;
+    TEXT-ALIGN: center;
+}
+.textoTituloCurso{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9px;
+    TEXT-ALIGN: center;
+}
+.headSearch{
+    BORDER-RIGHT: #66594d 1px solid;
+    BORDER-TOP: #66594d 1px solid;
+    FONT-SIZE: 15px;
+    BORDER-LEFT: #66594d 1px solid;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: #66594d 1px solid;
+    BACKGROUND-COLOR: #cc0000;
+    /*font-stretch: wider;*/
+}
+.tablaAutorizadores{
+    BORDER-RIGHT: #66594d 1px solid;
+    BORDER-TOP: #66594d 1px solid;
+    BORDER-LEFT: #66594d 1px solid;
+    BORDER-BOTTOM: #66594d 1px solid;
+}
+.footTable{
+    COLOR: #ffffff;
+    TEXT-INDENT: 3px;
+    LINE-HEIGHT: 22px;
+    BACKGROUND-COLOR: #66594d;
+}
+.labelHeadCurriculum{
+	FONT-SIZE: 11px;
+	BORDER-BOTTOM: #e0d6b5 1px solid;
+	BACKGROUND-COLOR: #f5f2e7;
+	TEXT-ALIGN: center;
+}
+.labelCurriculum{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+	TEXT-ALIGN: center;
+}
+#boxCalendario{
+	BORDER-RIGHT: #66594d 1px solid;
+	BORDER-TOP: #66594d 1px solid;
+	BORDER-LEFT: #66594d 1px solid;
+	BORDER-BOTTOM: #66594d 1px solid;
+	BACKGROUND-COLOR: #ffffff;
+}
+#boxAzul{
+	BORDER-RIGHT: #000000 1px solid;
+	BORDER-TOP: #000000 1px solid;
+	BORDER-LEFT: #000000 1px solid;
+	BORDER-BOTTOM: #000000 1px solid;
+	BACKGROUND-COLOR: #ffffff;
+}
+#boxNaranja{
+	BORDER-RIGHT: #000000 1px solid;
+	BORDER-TOP: #000000 1px solid;
+	BORDER-LEFT: #000000 1px solid;
+	BORDER-BOTTOM: #000000 1px solid;
+	BACKGROUND-COLOR: #ffffff;
+}
+.tableHeadCalendario{
+   FONT-WEIGHT: bold;
+   COLOR: #ffffff;
+   BACKGROUND-COLOR: #66594d;
+   TEXT-ALIGN: center;
+}
+.detalleCalendario{
+   BACKGROUND-COLOR: #ffffff;
+}
+.detalleCalendario_01{
+   FONT-SIZE: 9px;
+   BACKGROUND-COLOR: #ffffff;
+}
+.detalleTablero{
+   FONT-SIZE: 9px;
+   BORDER-BOTTOM: #66594d 1px solid;
+   BACKGROUND-COLOR: #ffffff;
+}
+.periodoRespondido{
+   FONT-SIZE: 9px;
+   BORDER-BOTTOM: #66594d 1px solid;
+   BACKGROUND-COLOR: #66594d;
+}
+.periodoNoRespondido{
+   FONT-SIZE: 9px;
+   BORDER-BOTTOM: #66594d 1px solid;
+   BACKGROUND-COLOR: #ffffff;
+}
+.quiebreReporte{
+   FONT-SIZE: 10px;
+   COLOR: #66594d;
+   BACKGROUND-COLOR: #e0d6b5;
+}
+.diaNormalCalendario{
+   FONT-WEIGHT: bold;
+   FONT-SIZE: 12px;
+   COLOR: #7878b0;
+}
+.diaFeriadoCalendario{
+   FONT-WEIGHT: bold;
+   FONT-SIZE: 12px;
+   COLOR: #cc0000;
+}
+.marcacionNormal{
+   FONT-WEIGHT: bold;
+   FONT-SIZE: 9px;
+   COLOR: #000000;
+}
+.marcacionNormalJus{
+   FONT-WEIGHT: bold;
+   FONT-SIZE: 9px;
+   COLOR: #003399;
+}
+.marcacionFalta{
+   FONT-WEIGHT: bold;
+   FONT-SIZE: 9px;
+   COLOR: #cc0000;
+}
+.horaShow{
+   FONT-WEIGHT: bold;
+   FONT-SIZE: 18px;
+   COLOR: #cc0000;
+   FONT-FAMILY: Arial;
+   BACKGROUND-COLOR: #ffffff;
+   TEXT-ALIGN: center;
+}
+.horaSubindice{
+   FONT-SIZE: 9px;
+   COLOR: #cc0000;
+   FONT-FAMILY: arial;
+   BACKGROUND-COLOR: #ffffff;
+   TEXT-ALIGN: center;
+}
+.horaSeleccionar{
+   COLOR: #000000;
+   FONT-FAMILY: Arial;
+   HEIGHT: 6px;
+   BACKGROUND-COLOR: #ffffff;
+   TEXT-ALIGN: center;
+}
+.reporteDescanzos{
+   BORDER-RIGHT: #66594d 1px solid;
+   BORDER-TOP: #66594d 1px solid;
+   BORDER-LEFT: #66594d 1px solid;
+   BORDER-BOTTOM: #66594d 1px solid;
+}
+.reporteDescanzosD{
+   BORDER-RIGHT: #66594d 1px solid;
+   BORDER-BOTTOM: #66594d 1px solid;
+}
+.reporteDescanzosR{
+   BORDER-BOTTOM: #66594d 1px solid;
+}
+.reporteDescanzosC{
+   BORDER-RIGHT: #66594d 1px solid;
+   BORDER-BOTTOM: #66594d 1px solid;
+}
+.reporteDescanzosDet{
+   BORDER-RIGHT: #66594d 1px solid;
+   BORDER-BOTTOM: #66594d 1px solid;
+}
+.reporteDescanzosDet20{
+   BORDER-RIGHT: #66594d 1px solid;
+   BORDER-BOTTOM: #66594d 2px solid;
+}
+.reporteDescanzosDetR{
+   BORDER-BOTTOM: #66594d 1px solid;
+}
+.reporteDescanzosDetR20{
+   BORDER-BOTTOM: #66594d 2px solid;
+}
+.tituloNoticia{
+   FONT-WEIGHT: bold;
+   FONT-SIZE: 12px;
+   COLOR: #cc0000;
+}
+.gorroNoticia{
+   FONT-SIZE: 9px;
+   COLOR: #000000;
+   FONT-STYLE: italic;
+   TEXT-ALIGN: justify;
+}
+.detalleNoticia{
+   COLOR: #000000;
+   TEXT-ALIGN: justify;
+}
+.clsSinSubsidio{
+   BORDER-BOTTOM: #e0d6b5 1px solid;
+   BACKGROUND-COLOR: #ffffff;
+}
+.clsCesado{
+   BORDER-BOTTOM: #e0d6b5 1px solid;
+   BACKGROUND-COLOR: #666699;
+}
+.clsConSubsidio20{
+   BORDER-BOTTOM: #e0d6b5 1px solid;
+   BACKGROUND-COLOR: #cc0000;
+}
+.clsConSubsidio180{
+   BORDER-BOTTOM: #e0d6b5 1px solid;
+   BACKGROUND-COLOR: #339900;
+}
+.clsConSubsidio340{
+   BORDER-BOTTOM: #e0d6b5 1px solid;
+   BACKGROUND-COLOR: #003399;
+}
+.clsConSubsidio540{
+   BORDER-BOTTOM: #e0d6b5 1px solid;
+   BACKGROUND-COLOR: #66594d;
+}
+#message{
+	color: #66594d;
+	font-family: arial;
+	font-size: 11px;
+	font-weight: bold;
+}
+#systemWorking{
+	border: 3px double #66594d;
+	width: 180px;
+	padding: 2px;
+	background-color: #ffffff;
+}
+#messageLoading{
+	background-color: #ffffff;
+}
+.titulo{
+    font-weight: bold;
+	text-decoration: none;
+    font-size: 15px;
+    color: #cc0000;
+    font-family: verdana, arial, helvetica, sans-serif;
+}
+.textoContenido{
+	margin: 0px;
+	font-weight: normal;
+	text-align: justify;
+	font-size: 11px;
+	color: #665a4c; 
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+.subTitulo{
+   font-weight: bold;
+	text-decoration: none;
+   font-size: 10px;
+   color: #cc0000;
+   font-family: verdana, arial, helvetica, sans-serif;
+}
+.textoContenidoSmall{
+	margin: 0px;
+	font-weight: normal; 
+	text-align: justify;
+	font-size: 10px;
+	color: #665a4c; 
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+.itemFormula{
+   font-weight: bold;
+	text-decoration: none;
+   font-size: 14px;
+   color: #665a4c;
+   font-family: verdana, arial, helvetica, sans-serif;
+}
+.signoFormula{
+	text-align: center;
+   font-weight: bold;
+	text-decoration: none;
+   font-size: 20px;
+   color: #cc0000;
+   font-family: verdana, arial, helvetica, sans-serif;
+}
+.totalSemana{
+	font-family: tahoma;
+	font-size: xx-small;
+	color: #666666;
+	background-color: #F5F2E7;
+	BORDER-BOTTOM: #e0d6b5 1px solid;
+}
+.totalGeneral{
+	font-family: tahoma;
+	font-size: xx-small;
+	color: #666666;
+	background-color: #E0D6B5;
+	BORDER-BOTTOM: #e0d6b5 1px solid;
+}  
+.csAsiMas1
+    {
+        width: 26px;
+    }
+.div_transparente
+{
+	background-image: url(images/transparencia.gif);
+	background-attachment: scroll;
+	background-repeat: repeat;
+}    
+.fondo_transparente-region{
+	height:28px;
+	background-image: url(images/transparencia.gif);
+}
+.center
+{
+	position: absolute;
+	/*nos posicionamos en el centro del navegador*/
+	top:50%;
+	left:50%;
+	/*determinamos una anchura*/
+	width:400px;
+	/*indicamos que el margen izquierdo, es la mitad de la anchura*/
+	margin-left:-200px;
+	/*determinamos una altura*/
+	height:300px;
+	/*indicamos que el margen superior, es la mitad de la altura*/
+	margin-top:-150;
+	border:1px solid #808080;
+	background-color:#fff;
+	padding:5px;
+}
+.uppercase
+{
+    text-transform: uppercase;
+    background-color: #FFFFDD;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contenedor general contenido */
+.hiddencon {
+margin: 0;
+padding: 0;
+width: 410px;
+z-index:99999;
+position: fixed;
+/* Desplazamiento para ocultar hacia la derecha
+todo el ancho del bloque menos el borde */
+right: -410px;
+top: 20px;
+opacity: .9;
+background-color: White;
+border: solid 4px #069;
+border-radius: 5px 0 0 5px;
+}
+.hiddencon2 {
+top: auto;
+bottom: 10px;
+}
+/* Contenido visible al hacer hover */
+.hiddencon:hover {
+right: 0;
+}
+/* Pestaña para desplegar */
+.hiddencon-label {
+margin-top: -17px;
+margin-left: -30px;
+padding: 10px;
+position: absolute;
+top: 50%;
+display: inline-block;
+color: White;
+background: #069;
+font-size: 14px;
+-moz-border-radius: 20px 0 0 20px;
+-webkit-border-radius: 20px 0 0 20px;
+border-radius: 20px 0 0 20px;
+}
+.hiddencon, .hiddencon-label {
+/* Desplegado suave con transiciones */
+-moz-transition: all 0.4s ease-in-out;
+-webkit-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+}
+/* El contenido incluida variante para listas */
+.hiddencon p, .hiddencon ul {
+margin: 0;
+padding: 0;
+border: 8px solid #069;
+border-right: 0;
+color: Black;
+background-color: White;
+text-align:center;
+vertical-align: center;
+-moz-border-radius: 10px 0 0 10px;
+-webkit-border-radius: 10px 0 0 10px;
+border-radius: 10px 0 0 10px;
+}
+/* Estilo para listas */
+.hiddencon ul {
+margin:0;
+overflow:auto;
+}
+.hiddencon li {
+display: block;
+}
+.hiddencon li a {
+display: block;
+padding: 10px;
+border-bottom: 1px solid #333;
+color: #ddd;
+-moz-transition: all 0.4s linear;
+-webkit-transition: all 0.4s linear;
+transition: all 0.4s linear;
+}
+.hiddencon li:last-child a{
+border-bottom: 0;
+}
+.hiddencon li a:hover {
+background-color: #333;
+text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contenedor general contenido */
+.hiddencon_derecha {
+margin: 0;
+padding: 0;
+width: 410px;
+z-index:99;
+position: fixed;
+/* Desplazamiento para ocultar hacia la derecha
+todo el ancho del bloque menos el borde */
+left: -400px;
+top: 20px;
+opacity: .9;
+background-color: White;
+border: solid 4px #069;
+border-radius: 0 5px 5px 0;
+}
+
+/* Contenido visible al hacer hover */
+.hiddencon_derecha:hover {
+left: 0;
+}
+/* Pestaña para desplegar */
+.hiddencon-label_derecha {
+margin-top: -17px;
+margin-left: -30px;
+padding: 10px;
+position: absolute;
+top: 50%;
+display: inline-block;
+color: White;
+background: #069;
+font-size: 14px;
+-moz-border-radius: 20px 0 0 20px;
+-webkit-border-radius: 20px 0 0 20px;
+border-radius: 0 20px 20px 0;
+right: -20px;
+}
+.hiddencon_derecha, .hiddencon-label_derecha {
+/* Desplegado suave con transiciones */
+-moz-transition: all 0.4s ease-in-out;
+-webkit-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+}
+/* El contenido incluida variante para listas */
+.hiddencon_derecha p, .hiddencon_derecha ul {
+margin: 0;
+padding: 0;
+border: 8px solid #069;
+border-right: 0;
+color: Black;
+background-color: White;
+text-align:center;
+vertical-align: center;
+-moz-border-radius: 10px 0 0 10px;
+-webkit-border-radius: 10px 0 0 10px;
+border-radius: 10px 0 0 10px;
+}
+/* Estilo para listas */
+.hiddencon_derecha ul {
+margin:0;
+overflow:auto;
+}
+.hiddencon_derecha li {
+display: block;
+}
+.hiddencon_derecha li a {
+display: block;
+padding: 10px;
+border-bottom: 1px solid #333;
+color: #ddd;
+-moz-transition: all 0.4s linear;
+-webkit-transition: all 0.4s linear;
+transition: all 0.4s linear;
+}
+.hiddencon_derecha li:last-child a{
+border-bottom: 0;
+}
+.hiddencon_derecha li a:hover {
+background-color: #333;
+text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contenedor general contenido */
+.cuadro_abajo {
+margin: 0;
+padding: 0;
+width: 800px;
+z-index:10;
+position: fixed;
+/* Desplazamiento para ocultar hacia la derecha
+todo el ancho del bloque menos el borde */
+left: 50%;
+margin-left: -400px;
+bottom: -380px;
+opacity: .9;
+background-color: White;
+border: solid 4px #069;
+border-radius: 5px 5px 0 0;
+}
+
+/* Contenido visible al hacer hover */
+.cuadro_abajo:hover {
+bottom: 0;
+}
+/* Pestaña para desplegar */
+.cuadro_abajo-label {
+margin-top: -17px;
+margin-left: -30px;
+padding: 10px;
+position: absolute;
+top: 50%;
+display: inline-block;
+color: White;
+background: #069;
+font-size: 14px;
+-moz-border-radius: 20px 0 0 20px;
+-webkit-border-radius: 20px 0 0 20px;
+border-radius: 20px 20px 0 0;
+top: 0px;
+left: 50%;
+}
+.cuadro_abajo, .cuadro_abajo-label {
+/* Desplegado suave con transiciones */
+-moz-transition: all 0.4s ease-in-out;
+-webkit-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+}
+/* El contenido incluida variante para listas */
+
+
+.jqx-chart-tooltip-text{
+z-index:999999;
+}
+
+#contentDiv{
+z-index:999999;
+}

@@ -1,0 +1,239 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2589E566-1721-43E1-B56F-493692649817}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Reportes</RootNamespace>
+    <AssemblyName>Reportes</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RpteProyectado.aspx.cs">
+      <DependentUpon>RpteProyectado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RpteProyectado.aspx.designer.cs">
+      <DependentUpon>RpteProyectado.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controles\ActualizarConsultaProductos.ascx" />
+    <Content Include="Controles\AdministracionEmpresa.ascx" />
+    <Content Include="Controles\AdministrarCarteras.ascx" />
+    <Content Include="Controles\Agenda.ascx" />
+    <Content Include="Controles\Agendar.ascx" />
+    <Content Include="Controles\Botones.ascx" />
+    <Content Include="Controles\BusquedaAgenda.ascx" />
+    <Content Include="Controles\BusquedaBolsa.ascx" />
+    <Content Include="Controles\BusquedaDatos.ascx" />
+    <Content Include="Controles\BusquedaDeuda.ascx" />
+    <Content Include="Controles\CalculoIndicadoresCobertura.ascx" />
+    <Content Include="Controles\Calendar.ascx" />
+    <Content Include="Controles\calendar.htm" />
+    <Content Include="Controles\CarteraCastigo.ascx" />
+    <Content Include="Controles\Chart.ascx" />
+    <Content Include="Controles\ChartColumn.ascx" />
+    <Content Include="Controles\Cliente.ascx" />
+    <Content Include="Controles\ClienteNoGestionado.ascx" />
+    <Content Include="Controles\Compromisos.ascx" />
+    <Content Include="Controles\ConsultaClientes.ascx" />
+    <Content Include="Controles\ConsultaCondiciones.ascx" />
+    <Content Include="Controles\ConsultaPagos.ascx" />
+    <Content Include="Controles\ConsultarProductoMontoCliente.ascx" />
+    <Content Include="Controles\CtCombo.ascx" />
+    <Content Include="Controles\CtlAdmGrupos.ascx" />
+    <Content Include="Controles\ctlAnalisisData.ascx" />
+    <Content Include="Controles\ctlAsignacion.ascx" />
+    <Content Include="Controles\CtlAsignarGestor.ascx" />
+    <Content Include="Controles\CtlCalling.ascx" />
+    <Content Include="Controles\CtlCamposBusqueda.ascx" />
+    <Content Include="Controles\CtlCboCartera.ascx" />
+    <Content Include="Controles\ctlConsulta.ascx" />
+    <Content Include="Controles\CtlConsultaPromesas.ascx" />
+    <Content Include="Controles\CtlCorreo.ascx" />
+    <Content Include="Controles\CtlCuadroMensaje.ascx" />
+    <Content Include="Controles\CtlDist.ascx" />
+    <Content Include="Controles\CtlDpto.ascx" />
+    <Content Include="Controles\CtlEditor.ascx" />
+    <Content Include="Controles\CtlEliminarAsignacion.ascx" />
+    <Content Include="Controles\CtlExportaDatos.ascx" />
+    <Content Include="Controles\CtlExportaFormatos.ascx" />
+    <Content Include="Controles\CtlGrilla.ascx" />
+    <Content Include="Controles\CtlImportarData.ascx" />
+    <Content Include="Controles\CtlImportExcel.ascx" />
+    <Content Include="Controles\CtlLlamadas.ascx" />
+    <Content Include="Controles\CtlLlamando.ascx" />
+    <Content Include="Controles\CtlLlamar.ascx" />
+    <Content Include="Controles\CtlMensajeAlerta.ascx" />
+    <Content Include="Controles\CtlMensajes.ascx" />
+    <Content Include="Controles\CtlMenu.ascx" />
+    <Content Include="Controles\ctlMntDirecciones.ascx" />
+    <Content Include="Controles\CtlModificarAsignacion.ascx" />
+    <Content Include="Controles\CtlNPerfil.ascx" />
+    <Content Include="Controles\CtlNuevaDireccion.ascx" />
+    <Content Include="Controles\CtlNuevaPromesas.ascx" />
+    <Content Include="Controles\CtlNuevoGrupo.ascx" />
+    <Content Include="Controles\CtlNuevoTelefono.ascx" />
+    <Content Include="Controles\CtlPagos.ascx" />
+    <Content Include="Controles\CtlProv.ascx" />
+    <Content Include="Controles\CtlReasignar.ascx" />
+    <Content Include="Controles\CtlReasignarGestor.ascx" />
+    <Content Include="Controles\CtlTelefono.ascx" />
+    <Content Include="Controles\CtlTxt.ascx" />
+    <Content Include="Controles\CtlValidaAcceso.ascx" />
+    <Content Include="Controles\DefinirCondicion.ascx" />
+    <Content Include="Controles\Gestion.ascx" />
+    <Content Include="Controles\GestionCliente.ascx" />
+    <Content Include="Controles\GraficoIndicadores.ascx" />
+    <Content Include="Controles\Metas.ascx" />
+    <Content Include="Controles\MetasCobranzasAvances.ascx" />
+    <Content Include="Controles\NAsignacion.ascx" />
+    <Content Include="Controles\NMCompromiso.ascx" />
+    <Content Include="Controles\NMPagos.ascx" />
+    <Content Include="Controles\NMUsuario.ascx" />
+    <Content Include="Controles\NuevaCartera.ascx" />
+    <Content Include="Controles\NuevaCondicion.ascx" />
+    <Content Include="Controles\NuevaEmpresa.ascx" />
+    <Content Include="Controles\NuevoCLienteGestionarCliente.ascx" />
+    <Content Include="Controles\Pagos.ascx" />
+    <Content Include="Controles\PagosCarteraCastigo.ascx" />
+    <Content Include="Controles\Popup.ascx" />
+    <Content Include="Controles\ReporteCampoCartera.ascx" />
+    <Content Include="Controles\ReporteCartasCampo.ascx" />
+    <Content Include="Controles\ReporteClienteEmpresaDireccionTrabajo.ascx" />
+    <Content Include="Controles\ReporteCobertura.ascx" />
+    <Content Include="Controles\ReporteComposicionCarteraGestor.ascx" />
+    <Content Include="Controles\ReporteCompromisos.ascx" />
+    <Content Include="Controles\ReporteCompromisosExternos.ascx" />
+    <Content Include="Controles\ReporteExternoGestionesRealizadas.ascx" />
+    <Content Include="Controles\ReporteGestionExterno.ascx" />
+    <Content Include="Controles\ReporteGestionInterno.ascx" />
+    <Content Include="Controles\ReporteInformacionCobertura.ascx" />
+    <Content Include="Controles\ReporteInternoGestionesRealizadas.ascx" />
+    <Content Include="Controles\ReportePagos.ascx" />
+    <Content Include="Controles\ReportePagosCarteraActiva.ascx" />
+    <Content Include="Controles\ReporteProductoOperacionCliente.ascx" />
+    <Content Include="Controles\ReporteTrabajo.ascx" />
+    <Content Include="Controles\ResultadoConsultaMontoCliente.ascx" />
+    <Content Include="Controles\Tareas.ascx" />
+    <Content Include="Controles\TipoCambio.ascx" />
+    <Content Include="Controles\Usuario.ascx" />
+    <Content Include="MasterPage.Master" />
+    <Content Include="RpteProyectado.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BE\BE.vbproj">
+      <Project>{D5F0BF87-9BA6-440C-8B03-C9ADFE287871}</Project>
+      <Name>BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BL\BL.vbproj">
+      <Project>{3EB3576B-C6E3-48F7-9C24-0A072786FF35}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConDB\ConDB.vbproj">
+      <Project>{2D525545-1C19-45BE-9EEF-0A3B47328A37}</Project>
+      <Name>ConDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controles\Controles.vbproj">
+      <Project>{272AADDF-DF47-499A-907F-A4D9F8360769}</Project>
+      <Name>Controles</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53458</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>copy $(SolutionDir)Controles\Controles\*.ascx $(ProjectDir)Controles\
+copy $(SolutionDir)Controles\Controles\*.html $(ProjectDir)Controles\
+copy $(SolutionDir)Controles\Controles\*.htm $(ProjectDir)Controles\</PreBuildEvent>
+  </PropertyGroup>
+</Project>

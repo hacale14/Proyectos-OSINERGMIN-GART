@@ -1,0 +1,536 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MasterPage.master.vb"
+    Inherits="Cobranza.MasterPage" %>
+
+<%@ Register Src="Controles/CtlMenu.ascx" TagName="CtlMenu" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Pagina Principal</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.ico" />
+    <meta name="keywords" content="Progress, Bar, Javascript, UI, Library, Widgets, Plugins, Component, jQuery, Multi, Sparklines">
+    <meta name="description" content="(Javascript) Multiple progress bar control and tiny chart (sparkline) Features; initial-mode, multi-processing, categorical-processing, limit-lines">
+    <meta name="author" content="Bugra OZDEN">
+    <style type="text/css">
+        .loading
+        {
+            position: fixed;
+            z-index: 999;
+            height: 2em;
+            width: 2em;
+            overflow: show;
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+        /* Transparent Overlay */.loading:before
+        {
+            content: '';
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.3);
+        }
+        /* :not(:required) hides these rules from IE9 and below */.loading:not(:required)
+        {
+            /* hide "loading..." text */
+            font: 0/0 a;
+            color: transparent;
+            text-shadow: none;
+            background-color: transparent;
+            border: 0;
+        }
+        .loading:not(:required):after
+        {
+            content: '';
+            display: block;
+            font-size: 10px;
+            width: 1em;
+            height: 1em;
+            margin-top: -0.5em;
+            -webkit-animation: spinner 1500ms infinite linear;
+            -moz-animation: spinner 1500ms infinite linear;
+            -ms-animation: spinner 1500ms infinite linear;
+            -o-animation: spinner 1500ms infinite linear;
+            animation: spinner 1500ms infinite linear;
+            border-radius: 0.5em;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+            box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+        }
+        /* Animation */@-webkit-keyframes@-webkit-keyframes@-webkit-keyframes@-webkit-keyframes@-webkit-keyframes@-webkit-keyframes@-webkit-keyframes@-webkit-keyframes@-webkit-keyframes@-webkit-keyframesspinner{0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg);}@-moz-keyframesspinner{0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg);}@-o-keyframesspinner{0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg);}@keyframesspinner{0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg);}</style>
+    <style type="text/css">
+        #my-progressbar-container
+        {
+            position: relative;
+            width: 200px; /* my-progressbar width */
+            padding: 20px 5px 20px 5px; /* Space for progresbar-texts */
+            background-color: transparent;
+            top: 0px;
+            left: 0px;
+        }
+        .progressbar-text
+        {
+            position: absolute;
+            font-family: Arial;
+            font-size: 10px;
+            color: #333333;
+        }
+        .progressbar-text.top-right
+        {
+            top: 5px;
+            right: 7px;
+        }
+        .progressbar-text.top-left
+        {
+            top: 5px;
+            left: 7px;
+        }
+        .progressbar-text.bottom-right
+        {
+            bottom: 5px;
+            right: 7px;
+        }
+        .progressbar-text.bottom-left
+        {
+            bottom: 5px;
+            left: 7px;
+        }
+    </style>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
+    <link href="calendar-blue.css" rel="stylesheet" type="text/css" />
+    <link href="style/gridview.css" rel="stylesheet" type="text/css" />
+    <link href="cssButton.css" rel="stylesheet" type="text/css" />
+    <style>
+        ._css3m
+        {
+            display: none;
+        }
+    </style>
+    <style type="text/css">
+        #vertgraph
+        {
+            width: 378px;
+            height: 207px;
+            position: relative;
+            background: url(         "g_backbar.gif" ) no-repeat;
+        }
+        #vertgraph ul
+        {
+            width: 378px;
+            height: 207px;
+            margin: 0;
+            padding: 0;
+        }
+        #vertgraph ul li
+        {
+            position: absolute;
+            width: 28px;
+            height: 160px;
+            bottom: 34px;
+            padding: 0 !important;
+            margin: 0 !important;
+            background: url(         "g_colorbar3.jpg" ) no-repeat !important;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            line-height: 2.5em;
+        }
+        #vertgraph li.critical
+        {
+            left: 24px;
+            background-position: 0px bottom !important;
+        }
+        #vertgraph li.high
+        {
+            left: 101px;
+            background-position: -28px bottom !important;
+        }
+        #vertgraph li.medium
+        {
+            left: 176px;
+            background-position: -56px bottom !important;
+        }
+        #vertgraph li.low
+        {
+            left: 251px;
+            background-position: -84px bottom !important;
+        }
+        #vertgraph li.info
+        {
+            left: 327px;
+            background-position: -112px bottom !important;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <%--FONT GOOGLE--%>
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One|Coda|Josefin+Sans|Kalam|Righteous"
+        rel="stylesheet" />
+</head>
+<link rel="stylesheet" href="<%=Estilos%>" type="text/css" />
+<body style="background-color: rgba(2,117,216,0.1);">
+    <form id="form1" runat="server">
+    <asp:HiddenField ID="Hidusuario" Value="" runat="server" />
+    <asp:HiddenField ID="Husuario" Value="" runat="server" />
+    <asp:HiddenField ID="Hclave" Value="" runat="server" />
+    <asp:HiddenField ID="Hcargo" Value="" runat="server" />
+    <asp:HiddenField ID="HNombreGestor" Value="" runat="server" />
+    <asp:HiddenField ID="HTipoUsuario" Value="" runat="server" />
+    <asp:HiddenField ID="HidPerfil" Value="" runat="server" />
+    <asp:HiddenField ID="HNombrePerfil" Value="" runat="server" />
+    <asp:HiddenField ID="HMenu" Value="" runat="server" />
+    <table align="center" width="100%" border="0">
+        <tr>
+            <td bgcolor="#070719" style="border-radius: 5px 0px 0px 5px;" colspan="1">
+                <ul id="css3menu1">
+                    <uc1:CtlMenu ID="CtlMenu1" runat="server" />
+                </ul>
+            </td>
+            <td bgcolor="#070719" style="width: 500px; border-radius: 0px 5px 5px 0px;">
+                <asp:Label ID="Label1" class="jc_usuario" runat="server" Text="" />
+            </td>
+        </tr>
+        <tr>
+            <td style="height: 3px;">
+            </td>
+        </tr>
+        <tr height="100%">
+            <td height="100%" colspan="4" width="100%">
+                <center>
+                    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
+                    </asp:ScriptManager>
+                    <asp:ContentPlaceHolder ID="Contenido" runat="server">
+                    </asp:ContentPlaceHolder>
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <td style="height: 3px;">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <center>
+                    <div class="centrarMensaje" style="color: <%=colorMenu%>; font-weight: bold; font-family: 'coda';
+                        font-size: small;">
+                        @Derechos Reservados PIMAY SAC
+                    </div>
+                </center>
+            </td>
+        </tr>
+    </table>
+    </form>
+
+
+    <script src="lib/jquery/jquery.min.js" type="text/javascript"></script>
+<%--  <script src="lib/easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>--%>
+ <%--   <script src="js/jquery.min.js" type="text/javascript"></script>--%>
+<%--    <script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>--%>
+
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="lib/control/progressbar.min.js"></script>
+
+    <script src="js/jquery.timers.js" type="text/javascript"></script>
+
+    <script src="scripts/gridview.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="scripts/scriptsSistema.js" charset="iso-8859-1"></script>
+
+    <script type="text/javascript" src="scripts/prototype.js"></script>
+
+    <script type="text/javascript" src="scripts/calendar.js"></script>
+
+    <script type="text/javascript" src="scripts/calendar-utils.js"></script>
+
+    <script type="text/javascript" src="scripts/calendar-es.js"></script>
+
+    <script type="text/javascript" src="scripts/gridviewScroll.min.js"></script>
+
+    <script src="js/tableExport.js" type="text/javascript"></script>
+
+    <script src="js/jquery.base64.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+            var progressBar; //my component object
+
+            window.onload = function(){
+                
+                //INIT function
+
+                // ### 
+                // Create New ProgressBar 
+                // ###
+
+                progressBar = new ProgressBar("my-progressbar", {'width':'200px', 'height':'6px'});
+                
+                // ### 
+                // Create Total Process 
+                // ###
+                
+                // Method 1:
+                
+                //progressBarItem = {};
+                //progressBarItem[ProgressBar.OPTION_NAME.ITEM_ID]  = "totalProcess";
+                //progressBar.createItem( progressBarItem );
+              
+                // Method 2:
+              
+                progressBar.createItem( "totalProcess" );
+                
+                // ### 
+                // Create Current Process 
+                // ###
+                
+                progressBarItem = {};
+                progressBarItem[ProgressBar.OPTION_NAME.ITEM_ID]    = "currentProcess";
+                progressBarItem[ProgressBar.OPTION_NAME.OPACITY]    = 0.8;
+                progressBarItem[ProgressBar.OPTION_NAME.POSITION]   = ProgressBar.OPTION_VALUE.POSITION.ABSOLUTE;
+                progressBarItem[ProgressBar.OPTION_NAME.COLOR_ID]   = ProgressBar.OPTION_VALUE.COLOR_ID.WHITE;
+
+                progressBar.createItem(progressBarItem);
+                
+                // ###
+                //Event Listener
+                // ###
+ 
+                // Event listener (COMPLETED)
+                progressBar.getElement().addEventListener(ProgressBar.EVENT.COMPLETED, 
+                    function($event){
+                        
+                        //Which itemID?
+                        switch($event.detail.itemID){
+                            
+                            //current process completed (white)
+                            case 'currentProcess':
+                                
+                                var randomValue = progressBar.getPercent('totalProcess') + (Math.random()*20) + 1;
+                                
+                                //Set percent values
+                                progressBar.setPercent(randomValue, 'totalProcess');
+                                setTimeout(function(){ progressBar.setPercent(0, 'currentProcess'); }, 500);
+
+                                break;
+                                
+                            //All completed (blue)
+                            case 'totalProcess':
+                                
+                                clearTimeout(window.playMultiProcessingTimer);
+                                setTimeout(function(){
+                                    document.getElementById('my-progressbar-text3').innerHTML = "";
+                                    document.getElementById('my-progressbar-text1').innerHTML = "Multi-Processing";
+                                },500);
+                                
+                                
+                                break;
+                            
+                        }
+
+                    });
+                    
+                //Event listener: CHANGED
+                progressBar.getElement().addEventListener(ProgressBar.EVENT.CHANGED, 
+                    function($event){
+                        
+                        //Which itemID?
+                        switch($event.detail.itemID){
+                            
+                            //current process completed (white)
+                            case 'currentProcess':
+                                
+                                document.getElementById('my-progressbar-text3').innerHTML = $event.detail.me.getPercent($event.detail.itemID) + '%';
+
+                                break;
+                                
+                            //All completed (blue)
+                            case 'totalProcess':
+                                
+                                document.getElementById('my-progressbar-text4').innerHTML = '<strong>Total</strong> ' + $event.detail.me.getPercent($event.detail.itemID) + '%';
+                                
+                                break;
+                            
+                        }
+                        
+                        
+                    });
+                                
+                //Play the demo
+                playMultiProcessing();
+                
+
+            }
+            
+            //Play the animation
+            function playMultiProcessing() {
+
+                window.playMultiProcessingTimer = setTimeout(playMultiProcessing, (Math.random()*1000)+100 );
+
+                if(progressBar.getPercent('currentProcess') != 100){
+
+                    //Set percent value (itemID:currentProcess)
+                    var randomValue = progressBar.getPercent('currentProcess') + parseInt((Math.random()*20) + 1);
+                    progressBar.setPercent(randomValue, 'currentProcess');
+
+                }
+
+            };
+            
+
+
+    </script>
+
+    <script type="text/javascript">
+    function redireccionar(){
+    location.href="Principal.aspx";
+    } 
+    </script>
+
+    <script language="javascript" type="text/javascript">
+
+
+
+
+
+        var cantValidaciones = 0;
+
+        function VerifySessionState(result) {
+
+            if (result.d) {
+                $("#EstadoSession").text("activo");
+            }
+            else
+                $("#EstadoSession").text("expiro");
+
+            $("#cantValidaciones").text(cantValidaciones);
+            cantValidaciones++;
+
+        }
+
+        function SessionAbandon() {
+
+            $.ajax({
+                type: "POST",
+                url: "Gestion.aspx/SessionAbandon",
+                data: {},
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                async: true,
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                    alert(textStatus + ": " + XMLHttpRequest.responseText);
+                }
+            });
+            
+        }
+    </script>
+
+    <script language="javascript" type="text/javascript"> 
+    function url(url,parametro,titulo,ancho,alto) {
+    newwindows=window.open(url + '?palabra=' + parametro + '&titulo=' + titulo ,'PopUp','top=50,left=50,width=1100,height=800,status=yes,resizable=yes,scrollbars=yes');
+    if (window.focus) {newwindows.focus()}
+        if (!newwindows.closed) {newwindows.focus()}
+        return false;
+    }
+
+    </script>
+
+    <script type="text/javascript">   
+            function validarLetras(e) { // 1
+            tecla = (document.all) ? e.keyCode : e.which;
+            if (tecla == 8) return true; // backspace
+            if (tecla == 32) return true; // espacio
+            if (tecla == 9) return true; // espacio
+           // if (tecla == 13) return true; // espacio
+            
+            if (e.ctrlKey && tecla == 86) { return true; } //Ctrl v
+            if (e.ctrlKey && tecla == 67) { return true; } //Ctrl c
+            if (e.ctrlKey && tecla == 88) { return true; } //Ctrl x
+    
+            patron = /[a-zA-Z]/; //patron
+
+            te = String.fromCharCode(tecla);
+            return patron.test(te); // prueba de patron
+        }
+        function validarNumeros(e) { // 1
+            tecla = (document.all) ? e.keyCode : e.which; // 2
+            if (tecla == 8) return true; // backspace
+            if (tecla == 109) return true; // menos
+            if (tecla == 110) return true; // punto
+            if (tecla == 189) return true; // guion
+            if (tecla == 9) return true; // guion
+           //   if (tecla == 13) return true; // espacio      
+            if (e.ctrlKey && tecla == 86) { return true }; //Ctrl v
+            if (e.ctrlKey && tecla == 67) { return true }; //Ctrl c
+            if (e.ctrlKey && tecla == 88) { return true }; //Ctrl x
+            if (tecla >= 96 && tecla <= 105) { return true; } //numpad
+            patron = /[0-9]/; // patron
+            te = String.fromCharCode(tecla);
+            return patron.test(te); // prueba
+        }
+       validateSpecialCharsStep2 = function() {
+    var characterReg = /[`~!@#$%^&*()_°¬|+\-=?;:'",.<>\{\}\[\]\\\/]/gi;
+    $('#roomClientFirstName_1').bind("keydown", function(event){		
+		var inputVal = $(this).val();		
+		if(characterReg.test(inputVal)) {			
+			$(this).val(inputVal.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi,''));			
+		}
+	});
+ 
+}
+        function valEmail(valor) {    // Cortesía de http://www.ejemplode.com
+            re = /^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,3})$/
+            if (!re.exec(valor)) {
+                return false;
+            } else {
+                return true;
+            }
+        }       
+        
+    </script>
+
+    <script type="text/javascript">
+		var selectedmov = null, // Object of the element to be moved
+		x_pos = 0, y_pos = 0, // Stores x & y coordinates of the mouse pointer
+		x_elem = 0, y_elem = 0; // Stores top, left values (edge) of the element	
+		// Will be called when user starts dragging an element
+		
+		function _drag_init(elem) {		
+		// Store the object of the element which needs to be moved		
+		selectedmov = elem;
+		x_elem = x_pos - selectedmov.offsetLeft;
+		y_elem = y_pos - selectedmov.offsetTop;
+		}
+
+		// Will be called when user dragging an element
+		function _move_elem(e) {		
+		x_pos = document.all ? window.event.clientX : e.pageX;
+		y_pos = document.all ? window.event.clientY : e.pageY;							
+//		if (selected !== null) {
+//			selectedmov.style.left = (x_pos - x_elem) + 'px';
+//			selectedmov.style.top = (y_pos - y_elem) + 'px';
+//			
+//		}		
+		}
+
+		// Destroy the object when we are done
+		function _destroy() {
+		selectedmov = null;	
+		}
+		document.onmousemove = _move_elem;
+		document.onmouseup = _destroy;
+		// Bind the functions...	
+		function conecta(e){							
+			_drag_init(e);
+			return false;
+		}
+    </script>
+
+    <asp:ContentPlaceHolder ID="footer" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

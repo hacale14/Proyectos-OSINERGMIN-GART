@@ -1,0 +1,70 @@
+D:\PIMAY\Infoteca\Desarrollo\ASPNet\Cobranzas\BE\bin\Release\BE.dll
+D:\PIMAY\Infoteca\Desarrollo\ASPNet\Cobranzas\BE\bin\Release\BE.pdb
+D:\PIMAY\Infoteca\Desarrollo\ASPNet\Cobranzas\BE\obj\Release\ResolveAssemblyReference.cache
+D:\PIMAY\Infoteca\Desarrollo\ASPNet\Cobranzas\BE\obj\Release\BE.Resources.resources
+D:\PIMAY\Infoteca\Desarrollo\ASPNet\Cobranzas\BE\obj\Release\BE.vbproj.GenerateResource.Cache
+D:\PIMAY\Infoteca\Desarrollo\ASPNet\Cobranzas\BE\obj\Release\BE.dll
+D:\PIMAY\Infoteca\Desarrollo\ASPNet\Cobranzas\BE\obj\Release\BE.pdb
+D:\PIMAY\Infoteca\Desarrollo\ASPNet\Cobranzas\Cobranzas\BE\bin\Release\BE.dll
+D:\PIMAY\Infoteca\Desarrollo\ASPNet\Cobranzas\Cobranzas\BE\bin\Release\BE.pdb
+D:\PIMAY\Infoteca\Desarrollo\ASPNet\Cobranzas\Cobranzas\BE\obj\Release\ResolveAssemblyReference.cache
+D:\PIMAY\Infoteca\Desarrollo\ASPNet\Cobranzas\Cobranzas\BE\obj\Release\BE.Resources.resources
+D:\PIMAY\Infoteca\Desarrollo\ASPNet\Cobranzas\Cobranzas\BE\obj\Release\BE.vbproj.GenerateResource.Cache
+D:\PIMAY\Infoteca\Desarrollo\ASPNet\Cobranzas\Cobranzas\BE\obj\Release\BE.dll
+D:\PIMAY\Infoteca\Desarrollo\ASPNet\Cobranzas\Cobranzas\BE\obj\Release\BE.pdb
+E:\PIMAY\MARTINEZ\MARTINEZ\Cobranzas\BE\bin\Release\BE.dll
+E:\PIMAY\MARTINEZ\MARTINEZ\Cobranzas\BE\bin\Release\BE.pdb
+E:\PIMAY\MARTINEZ\MARTINEZ\Cobranzas\BE\obj\Release\ResolveAssemblyReference.cache
+E:\PIMAY\MARTINEZ\MARTINEZ\Cobranzas\BE\obj\Release\BE.Resources.resources
+E:\PIMAY\MARTINEZ\MARTINEZ\Cobranzas\BE\obj\Release\BE.vbproj.GenerateResource.Cache
+E:\PIMAY\MARTINEZ\MARTINEZ\Cobranzas\BE\obj\Release\BE.dll
+E:\PIMAY\MARTINEZ\MARTINEZ\Cobranzas\BE\obj\Release\BE.pdb
+D:\Fuente\Cobranzas\Cobranzas\BE\bin\Release\BE.dll
+D:\Fuente\Cobranzas\Cobranzas\BE\bin\Release\BE.pdb
+D:\Fuente\Cobranzas\Cobranzas\BE\obj\Release\ResolveAssemblyReference.cache
+D:\Fuente\Cobranzas\Cobranzas\BE\obj\Release\BE.Resources.resources
+D:\Fuente\Cobranzas\Cobranzas\BE\obj\Release\BE.vbproj.GenerateResource.Cache
+D:\Fuente\Cobranzas\Cobranzas\BE\obj\Release\BE.dll
+D:\Fuente\Cobranzas\Cobranzas\BE\obj\Release\BE.pdb
+E:\Cobranzas\BE\bin\Release\BE.dll
+E:\Cobranzas\BE\bin\Release\BE.pdb
+E:\Cobranzas\BE\obj\Release\ResolveAssemblyReference.cache
+E:\Cobranzas\BE\obj\Release\BE.Resources.resources
+E:\Cobranzas\BE\obj\Release\BE.vbproj.GenerateResource.Cache
+E:\Cobranzas\BE\obj\Release\BE.dll
+E:\Cobranzas\BE\obj\Release\BE.pdb
+E:\Fuentes PIMAY\Cobranzas\BE\bin\Release\BE.dll
+E:\Fuentes PIMAY\Cobranzas\BE\bin\Release\BE.pdb
+E:\Fuentes PIMAY\Cobranzas\BE\obj\Release\ResolveAssemblyReference.cache
+E:\Fuentes PIMAY\Cobranzas\BE\obj\Release\BE.Resources.resources
+E:\Fuentes PIMAY\Cobranzas\BE\obj\Release\BE.vbproj.GenerateResource.Cache
+E:\Fuentes PIMAY\Cobranzas\BE\obj\Release\BE.dll
+E:\Fuentes PIMAY\Cobranzas\BE\obj\Release\BE.pdb
+F:\Fuentes EM\Cobranzas\BE\bin\Release\BE.dll
+F:\Fuentes EM\Cobranzas\BE\bin\Release\BE.pdb
+F:\Fuentes EM\Cobranzas\BE\obj\Release\ResolveAssemblyReference.cache
+F:\Fuentes EM\Cobranzas\BE\obj\Release\BE.Resources.resources
+F:\Fuentes EM\Cobranzas\BE\obj\Release\BE.vbproj.GenerateResource.Cache
+F:\Fuentes EM\Cobranzas\BE\obj\Release\BE.dll
+F:\Fuentes EM\Cobranzas\BE\obj\Release\BE.pdb
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BE\bin\Release\BE.dll
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BE\bin\Release\BE.pdb
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BE\obj\Release\ResolveAssemblyReference.cache
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BE\obj\Release\BE.Resources.resources
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BE\obj\Release\BE.vbproj.GenerateResource.Cache
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BE\obj\Release\BE.dll
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BE\obj\Release\BE.pdb
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BE\bin\Release\BE.dll
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BE\bin\Release\BE.pdb
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BE\obj\Release\ResolveAssemblyReference.cache
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BE\obj\Release\BE.Resources.resources
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BE\obj\Release\BE.vbproj.GenerateResource.Cache
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BE\obj\Release\BE.dll
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BE\obj\Release\BE.pdb
+D:\pimay\Desarrollo\AspNET2008\Fuente\sagec\BE\bin\Release\BE.dll
+D:\pimay\Desarrollo\AspNET2008\Fuente\sagec\BE\bin\Release\BE.pdb
+D:\pimay\Desarrollo\AspNET2008\Fuente\sagec\BE\obj\Release\ResolveAssemblyReference.cache
+D:\pimay\Desarrollo\AspNET2008\Fuente\sagec\BE\obj\Release\BE.Resources.resources
+D:\pimay\Desarrollo\AspNET2008\Fuente\sagec\BE\obj\Release\BE.vbproj.GenerateResource.Cache
+D:\pimay\Desarrollo\AspNET2008\Fuente\sagec\BE\obj\Release\BE.dll
+D:\pimay\Desarrollo\AspNET2008\Fuente\sagec\BE\obj\Release\BE.pdb

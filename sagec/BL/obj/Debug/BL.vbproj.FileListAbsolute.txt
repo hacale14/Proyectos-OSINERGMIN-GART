@@ -1,0 +1,160 @@
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\BL\bin\Debug\BL.dll
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\BL\bin\Debug\BL.pdb
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\BL\bin\Debug\BL.xml
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\BL\bin\Debug\BE.dll
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\BL\bin\Debug\ConDB.dll
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\BL\bin\Debug\Newtonsoft.Json.dll
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\BL\bin\Debug\MySql.Data.dll
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\BL\bin\Debug\ConDB.pdb
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\BL\bin\Debug\BE.pdb
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\BL\obj\Debug\ResolveAssemblyReference.cache
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\BL\obj\Debug\BL.vbproj.ResolveComReference.cache
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\BL\obj\Debug\BL.Resources.resources
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\BL\obj\Debug\BL.vbproj.GenerateResource.Cache
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\BL\obj\Debug\BL.dll
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\BL\obj\Debug\BL.xml
+D:\Vicente\Fuentes_Pimay\Fuentes EM\Cobranzas\BL\obj\Debug\BL.pdb
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BL\bin\Debug\BL.dll
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BL\bin\Debug\BL.pdb
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BL\bin\Debug\BL.xml
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BL\bin\Debug\BE.dll
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BL\bin\Debug\ConDB.dll
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BL\bin\Debug\Newtonsoft.Json.dll
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BL\bin\Debug\MySql.Data.dll
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BL\bin\Debug\ConDB.pdb
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BL\bin\Debug\BE.pdb
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BL\obj\Debug\ResolveAssemblyReference.cache
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BL\obj\Debug\BL.vbproj.ResolveComReference.cache
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BL\obj\Debug\BL.Resources.resources
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BL\obj\Debug\BL.vbproj.GenerateResource.Cache
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BL\obj\Debug\BL.dll
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BL\obj\Debug\BL.xml
+D:\Vicente\Fuentes_Pimay\FuentesEM\Cobranzas\BL\obj\Debug\BL.pdb
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\BL.dll
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\BL.pdb
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\BL.xml
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\BE.dll
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\ConDB.dll
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\Newtonsoft.Json.dll
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\MySql.Data.dll
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\ConDB.pdb
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\BE.pdb
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\ResolveAssemblyReference.cache
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\BL.vbproj.ResolveComReference.cache
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\BL.Resources.resources
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\BL.vbproj.GenerateResource.Cache
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\BL.dll
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\BL.xml
+E:\PIMAY\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\BL.pdb
+C:\Users\76188778\Desktop\valsys\Valsys\BL\bin\Debug\BL.dll
+C:\Users\76188778\Desktop\valsys\Valsys\BL\bin\Debug\BL.pdb
+C:\Users\76188778\Desktop\valsys\Valsys\BL\bin\Debug\BL.xml
+C:\Users\76188778\Desktop\valsys\Valsys\BL\bin\Debug\BE.dll
+C:\Users\76188778\Desktop\valsys\Valsys\BL\bin\Debug\ConDB.dll
+C:\Users\76188778\Desktop\valsys\Valsys\BL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\76188778\Desktop\valsys\Valsys\BL\bin\Debug\MySql.Data.dll
+C:\Users\76188778\Desktop\valsys\Valsys\BL\bin\Debug\ConDB.pdb
+C:\Users\76188778\Desktop\valsys\Valsys\BL\bin\Debug\BE.pdb
+C:\Users\76188778\Desktop\valsys\Valsys\BL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\76188778\Desktop\valsys\Valsys\BL\obj\Debug\BL.vbproj.ResolveComReference.cache
+C:\Users\76188778\Desktop\valsys\Valsys\BL\obj\Debug\BL.Resources.resources
+C:\Users\76188778\Desktop\valsys\Valsys\BL\obj\Debug\BL.vbproj.GenerateResource.Cache
+C:\Users\76188778\Desktop\valsys\Valsys\BL\obj\Debug\BL.dll
+C:\Users\76188778\Desktop\valsys\Valsys\BL\obj\Debug\BL.xml
+C:\Users\76188778\Desktop\valsys\Valsys\BL\obj\Debug\BL.pdb
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\BL.dll
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\BL.pdb
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\BL.xml
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\BE.dll
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\ConDB.dll
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\Newtonsoft.Json.dll
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\MySql.Data.dll
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\ConDB.pdb
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\BE.pdb
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\ResolveAssemblyReference.cache
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\BL.vbproj.ResolveComReference.cache
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\BL.Resources.resources
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\BL.vbproj.GenerateResource.Cache
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\BL.dll
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\BL.xml
+D:\GoogleDrive\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\BL.pdb
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\BL.dll
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\BL.pdb
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\BL.xml
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\BE.dll
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\ConDB.dll
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\Newtonsoft.Json.dll
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\MySql.Data.dll
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\ConDB.pdb
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\BL\bin\Debug\BE.pdb
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\ResolveAssemblyReference.cache
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\BL.vbproj.ResolveComReference.cache
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\BL.Resources.resources
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\BL.vbproj.GenerateResource.Cache
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\BL.dll
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\BL.xml
+E:\PIMAY\Desarrollo\AspNET2008\Sistema\Desarrollo\Fuente\Valsys\BL\obj\Debug\BL.pdb
+E:\Fuente\Valsys\BL\bin\Debug\BL.dll
+E:\Fuente\Valsys\BL\bin\Debug\BL.pdb
+E:\Fuente\Valsys\BL\bin\Debug\BL.xml
+E:\Fuente\Valsys\BL\bin\Debug\BE.dll
+E:\Fuente\Valsys\BL\bin\Debug\ConDB.dll
+E:\Fuente\Valsys\BL\bin\Debug\Newtonsoft.Json.dll
+E:\Fuente\Valsys\BL\bin\Debug\MySql.Data.dll
+E:\Fuente\Valsys\BL\bin\Debug\ConDB.pdb
+E:\Fuente\Valsys\BL\bin\Debug\BE.pdb
+E:\Fuente\Valsys\BL\obj\Debug\ResolveAssemblyReference.cache
+E:\Fuente\Valsys\BL\obj\Debug\BL.vbproj.ResolveComReference.cache
+E:\Fuente\Valsys\BL\obj\Debug\BL.Resources.resources
+E:\Fuente\Valsys\BL\obj\Debug\BL.vbproj.GenerateResource.Cache
+E:\Fuente\Valsys\BL\obj\Debug\BL.dll
+E:\Fuente\Valsys\BL\obj\Debug\BL.xml
+E:\Fuente\Valsys\BL\obj\Debug\BL.pdb
+E:\Fuente\sagec\BL\bin\Debug\BL.dll
+E:\Fuente\sagec\BL\bin\Debug\BL.pdb
+E:\Fuente\sagec\BL\bin\Debug\BL.xml
+E:\Fuente\sagec\BL\bin\Debug\BE.dll
+E:\Fuente\sagec\BL\bin\Debug\ConDB.dll
+E:\Fuente\sagec\BL\bin\Debug\Newtonsoft.Json.dll
+E:\Fuente\sagec\BL\bin\Debug\MySql.Data.dll
+E:\Fuente\sagec\BL\bin\Debug\ConDB.pdb
+E:\Fuente\sagec\BL\bin\Debug\BE.pdb
+E:\Fuente\sagec\BL\obj\Debug\ResolveAssemblyReference.cache
+E:\Fuente\sagec\BL\obj\Debug\BL.vbproj.ResolveComReference.cache
+E:\Fuente\sagec\BL\obj\Debug\BL.Resources.resources
+E:\Fuente\sagec\BL\obj\Debug\BL.vbproj.GenerateResource.Cache
+E:\Fuente\sagec\BL\obj\Debug\BL.dll
+E:\Fuente\sagec\BL\obj\Debug\BL.xml
+E:\Fuente\sagec\BL\obj\Debug\BL.pdb
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\bin\Debug\BL.dll
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\bin\Debug\BL.pdb
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\bin\Debug\BL.xml
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\bin\Debug\BE.dll
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\bin\Debug\ConDB.dll
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\bin\Debug\Newtonsoft.Json.dll
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\bin\Debug\MySql.Data.dll
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\bin\Debug\ConDB.pdb
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\bin\Debug\BE.pdb
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\obj\Debug\ResolveAssemblyReference.cache
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\obj\Debug\BL.vbproj.ResolveComReference.cache
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\obj\Debug\BL.Resources.resources
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\obj\Debug\BL.vbproj.GenerateResource.Cache
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\obj\Debug\BL.dll
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\obj\Debug\BL.xml
+E:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\obj\Debug\BL.pdb
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\bin\Debug\BL.dll
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\bin\Debug\BL.pdb
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\bin\Debug\BL.xml
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\bin\Debug\BE.dll
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\bin\Debug\ConDB.dll
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\bin\Debug\Newtonsoft.Json.dll
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\bin\Debug\MySql.Data.dll
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\bin\Debug\ConDB.pdb
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\bin\Debug\BE.pdb
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\obj\Debug\ResolveAssemblyReference.cache
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\obj\Debug\BL.vbproj.ResolveComReference.cache
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\obj\Debug\BL.Resources.resources
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\obj\Debug\BL.vbproj.GenerateResource.Cache
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\obj\Debug\BL.dll
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\obj\Debug\BL.xml
+D:\PIMAY\Desarrollo\AspNET2008\Fuente\sagec\BL\obj\Debug\BL.pdb

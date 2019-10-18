@@ -1,0 +1,1424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EC19BA7E-D6EA-4743-968E-444B9E798E46}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Cobranza</RootNamespace>
+    <AssemblyName>Cobranza</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Cobranza.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Cobranza.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="cmdAsp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="DiffieHellman, Version=0.0.0.0, Culture=neutral" />
+    <Reference Include="itextsharp, Version=5.1.3.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Controles\bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="MySql.Data, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Org.Mentalis.Security, Version=1.0.13.715, Culture=neutral" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>c:\Program Files (x86)\Microsoft Chart Controls\Assemblies\System.Web.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="Tamir.sharpSsh, Version=1.0.3.0, Culture=neutral" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\arrow-left.png" />
+    <Content Include="images\arrow-right.png" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\cloud.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\pic1.png" />
+    <Content Include="images\pic2.png" />
+    <Content Include="images\pic3.jpg" />
+    <Content Include="images\pic4.jpg" />
+    <Content Include="images\user.png" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="style\bootstrap.min.css" />
+    <Content Include="style\font-awesome.css" />
+    <Content Include="style\style.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administracion.aspx.designer.vb">
+      <DependentUpon>Administracion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion.aspx.vb">
+      <DependentUpon>Administracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministracionEmpresas.aspx.designer.vb">
+      <DependentUpon>AdministracionEmpresas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministracionEmpresas.aspx.vb">
+      <DependentUpon>AdministracionEmpresas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AdministrarGrupo.aspx.designer.vb">
+      <DependentUpon>AdministrarGrupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrarGrupo.aspx.vb">
+      <DependentUpon>AdministrarGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda.aspx.designer.vb">
+      <DependentUpon>Agenda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda.aspx.vb">
+      <DependentUpon>Agenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agente.aspx.designer.vb">
+      <DependentUpon>Agente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agente.aspx.vb">
+      <DependentUpon>Agente.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AsignaCampo.aspx.designer.vb">
+      <DependentUpon>AsignaCampo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AsignaCampo.aspx.vb">
+      <DependentUpon>AsignaCampo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AsignarGestores.aspx.designer.vb">
+      <DependentUpon>AsignarGestores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AsignarGestores.aspx.vb">
+      <DependentUpon>AsignarGestores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalculoIndicadoresCartera.aspx.designer.vb">
+      <DependentUpon>CalculoIndicadoresCartera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalculoIndicadoresCartera.aspx.vb">
+      <DependentUpon>CalculoIndicadoresCartera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoberturaCarteraGestor.aspx.designer.vb">
+      <DependentUpon>CoberturaCarteraGestor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoberturaCarteraGestor.aspx.vb">
+      <DependentUpon>CoberturaCarteraGestor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComposicionCarteraGestor.aspx.designer.vb">
+      <DependentUpon>ComposicionCarteraGestor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComposicionCarteraGestor.aspx.vb">
+      <DependentUpon>ComposicionCarteraGestor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consulta.aspx.designer.vb">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta.aspx.vb">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAsigancionPopup.aspx.designer.vb">
+      <DependentUpon>ConsultaAsigancionPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAsigancionPopup.aspx.vb">
+      <DependentUpon>ConsultaAsigancionPopup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAsignacion.aspx.designer.vb">
+      <DependentUpon>ConsultaAsignacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAsignacion.aspx.vb">
+      <DependentUpon>ConsultaAsignacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministracionCliente.aspx.designer.vb">
+      <DependentUpon>AdministracionCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministracionCliente.aspx.vb">
+      <DependentUpon>AdministracionCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaProducto.aspx.designer.vb">
+      <DependentUpon>ConsultaProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaProducto.aspx.vb">
+      <DependentUpon>ConsultaProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CartasCampo.aspx.designer.vb">
+      <DependentUpon>CartasCampo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CartasCampo.aspx.vb">
+      <DependentUpon>CartasCampo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CAReporteGestionInterno.aspx.designer.vb">
+      <DependentUpon>CAReporteGestionInterno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CAReporteGestionInterno.aspx.vb">
+      <DependentUpon>CAReporteGestionInterno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CAReportePago.aspx.designer.vb">
+      <DependentUpon>CAReportePago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CAReportePago.aspx.vb">
+      <DependentUpon>CAReportePago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CAReporteCartasCampo.aspx.designer.vb">
+      <DependentUpon>CAReporteCartasCampo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CAReporteCartasCampo.aspx.vb">
+      <DependentUpon>CAReporteCartasCampo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComposicionCarteraGlobal.aspx.designer.vb">
+      <DependentUpon>ComposicionCarteraGlobal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComposicionCarteraGlobal.aspx.vb">
+      <DependentUpon>ComposicionCarteraGlobal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Estadisticas.aspx.designer.vb">
+      <DependentUpon>Estadisticas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Estadisticas.aspx.vb">
+      <DependentUpon>Estadisticas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Empresa.aspx.designer.vb">
+      <DependentUpon>Empresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empresa.aspx.vb">
+      <DependentUpon>Empresa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Asignacion.aspx.designer.vb">
+      <DependentUpon>Asignacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Asignacion.aspx.vb">
+      <DependentUpon>Asignacion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Exporta.aspx.designer.vb">
+      <DependentUpon>Exporta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exporta.aspx.vb">
+      <DependentUpon>Exporta.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ExportarData.aspx.designer.vb">
+      <DependentUpon>ExportarData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExportarData.aspx.vb">
+      <DependentUpon>ExportarData.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Predictiva.aspx.designer.vb">
+      <DependentUpon>Gestion_Predictiva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Predictiva.aspx.vb">
+      <DependentUpon>Gestion_Predictiva.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="inicio.aspx.designer.vb">
+      <DependentUpon>inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inicio.aspx.vb">
+      <DependentUpon>inicio.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MarcoExportar.aspx.designer.vb">
+      <DependentUpon>MarcoExportar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MarcoExportar.aspx.vb">
+      <DependentUpon>MarcoExportar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.vb">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.vb">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mensaje.aspx.designer.vb">
+      <DependentUpon>Mensaje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mensaje.aspx.vb">
+      <DependentUpon>Mensaje.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Monitoreo.aspx.designer.vb">
+      <DependentUpon>Monitoreo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Monitoreo.aspx.vb">
+      <DependentUpon>Monitoreo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Predictivo.aspx.designer.vb">
+      <DependentUpon>Predictivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Predictivo.aspx.vb">
+      <DependentUpon>Predictivo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Propuesta.aspx.designer.vb">
+      <DependentUpon>Propuesta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Propuesta.aspx.vb">
+      <DependentUpon>Propuesta.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gestion.aspx.designer.vb">
+      <DependentUpon>Gestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion.aspx.vb">
+      <DependentUpon>Gestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestionarbk.aspx.designer.vb">
+      <DependentUpon>Gestionarbk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionarbk.aspx.vb">
+      <DependentUpon>Gestionarbk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImportarData.aspx.designer.vb">
+      <DependentUpon>ImportarData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImportarData.aspx.vb">
+      <DependentUpon>ImportarData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InformacionCoberturaGestor.aspx.designer.vb">
+      <DependentUpon>InformacionCoberturaGestor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InformacionCoberturaGestor.aspx.vb">
+      <DependentUpon>InformacionCoberturaGestor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InformacionCoberturaGlobal.aspx.designer.vb">
+      <DependentUpon>InformacionCoberturaGlobal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InformacionCoberturaGlobal.aspx.vb">
+      <DependentUpon>InformacionCoberturaGlobal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NPerfil.aspx.designer.vb">
+      <DependentUpon>NPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NPerfil.aspx.vb">
+      <DependentUpon>NPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NUsuario.aspx.designer.vb">
+      <DependentUpon>NUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NUsuario.aspx.vb">
+      <DependentUpon>NUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Observacion.aspx.designer.vb">
+      <DependentUpon>Observacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Observacion.aspx.vb">
+      <DependentUpon>Observacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaGenerada.aspx.designer.vb">
+      <DependentUpon>PaginaGenerada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaGenerada.aspx.vb">
+      <DependentUpon>PaginaGenerada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagos.aspx.designer.vb">
+      <DependentUpon>Pagos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagos.aspx.vb">
+      <DependentUpon>Pagos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Perfil.aspx.designer.vb">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Perfil.aspx.vb">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReasignarGestor.aspx.designer.vb">
+      <DependentUpon>ReasignarGestor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReasignarGestor.aspx.vb">
+      <DependentUpon>ReasignarGestor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReporteAgenda.aspx.designer.vb">
+      <DependentUpon>ReporteAgenda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteAgenda.aspx.vb">
+      <DependentUpon>ReporteAgenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReporteBolsa.aspx.designer.vb">
+      <DependentUpon>ReporteBolsa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteBolsa.aspx.vb">
+      <DependentUpon>ReporteBolsa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportePago.aspx.designer.vb">
+      <DependentUpon>ReportePago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportePago.aspx.vb">
+      <DependentUpon>ReportePago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReporteGestionExterna.aspx.designer.vb">
+      <DependentUpon>ReporteGestionExterna.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteGestionExterna.aspx.vb">
+      <DependentUpon>ReporteGestionExterna.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReporteGestionInterna.aspx.designer.vb">
+      <DependentUpon>ReporteGestionInterna.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteGestionInterna.aspx.vb">
+      <DependentUpon>ReporteGestionInterna.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RpteCompromisos.aspx.designer.vb">
+      <DependentUpon>RpteCompromisos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RpteCompromisos.aspx.vb">
+      <DependentUpon>RpteCompromisos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="SeleccionPerfil.aspx.designer.vb">
+      <DependentUpon>SeleccionPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionPerfil.aspx.vb">
+      <DependentUpon>SeleccionPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Service References\svllamadas\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Tarea.aspx.designer.vb">
+      <DependentUpon>Tarea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tarea.aspx.vb">
+      <DependentUpon>Tarea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TipoCambio.aspx.designer.vb">
+      <DependentUpon>TipoCambio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TipoCambio.aspx.vb">
+      <DependentUpon>TipoCambio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReporteTrabajo.aspx.designer.vb">
+      <DependentUpon>ReporteTrabajo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteTrabajo.aspx.vb">
+      <DependentUpon>ReporteTrabajo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReporteCompromisoExterno.aspx.designer.vb">
+      <DependentUpon>ReporteCompromisoExterno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteCompromisoExterno.aspx.vb">
+      <DependentUpon>ReporteCompromisoExterno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Principal.aspx.designer.vb">
+      <DependentUpon>Principal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.aspx.vb">
+      <DependentUpon>Principal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ReporteCompromisos.aspx.designer.vb">
+      <DependentUpon>ReporteCompromisos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteCompromisos.aspx.vb">
+      <DependentUpon>ReporteCompromisos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuario.aspx.designer.vb">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.aspx.vb">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VB.aspx.vb">
+      <DependentUpon>VB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administracion.aspx" />
+    <Content Include="AdministracionEmpresas.aspx" />
+    <Content Include="AdministrarGrupo.aspx" />
+    <Content Include="Agenda.aspx" />
+    <Content Include="Agente.aspx" />
+    <Content Include="cssButton.css" />
+    <Content Include="AsignaCampo.aspx" />
+    <Content Include="AsignarGestores.aspx" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\AjaxMin.dll" />
+    <Content Include="bin\BE.dll" />
+    <Content Include="bin\BE.pdb" />
+    <Content Include="bin\BL.dll" />
+    <Content Include="bin\BL.pdb" />
+    <Content Include="bin\BL.xml" />
+    <Content Include="bin\cmdAsp.dll" />
+    <Content Include="bin\ConDB.dll" />
+    <Content Include="bin\ConDB.pdb" />
+    <Content Include="bin\Controles.dll" />
+    <Content Include="bin\Controles.pdb" />
+    <Content Include="bin\Controles.xml" />
+    <Content Include="bin\DiffieHellman.dll" />
+    <Content Include="bin\HtmlAgilityPack.dll" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="bin\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="bin\Microsoft.Office.Interop.Excel.xml" />
+    <Content Include="bin\Microsoft.Vbe.Interop.dll" />
+    <Content Include="bin\MySql.Data.dll" />
+    <Content Include="bin\MySql.Web.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\office.dll" />
+    <Content Include="bin\office.xml" />
+    <Content Include="bin\Org.Mentalis.Security.dll" />
+    <Content Include="bin\sharpSshTest.exe" />
+    <Content Include="bin\System.Web.DataVisualization.dll" />
+    <Content Include="bin\Tamir.sharpSsh.dll" />
+    <Content Include="CalculoIndicadoresCartera.aspx" />
+    <Content Include="calendar-blue.css" />
+    <Content Include="Calendar.html" />
+    <Content Include="CoberturaCarteraGestor.aspx" />
+    <Content Include="ComposicionCarteraGestor.aspx" />
+    <Content Include="Consulta.aspx" />
+    <Content Include="ConsultaAsigancionPopup.aspx" />
+    <Content Include="ConsultaAsignacion.aspx" />
+    <Content Include="Controles\ActualizarConsultaProductos.ascx" />
+    <Content Include="Controles\AdministracionEmpresa.ascx" />
+    <Content Include="Controles\AdministrarCarteras.ascx" />
+    <Content Include="Controles\Agenda.ascx" />
+    <Content Include="Controles\Agendar.ascx" />
+    <Content Include="Controles\Botones.ascx" />
+    <Content Include="Controles\BusquedaAgenda.ascx" />
+    <Content Include="Controles\BusquedaBolsa.ascx" />
+    <Content Include="Controles\BusquedaDatos.ascx" />
+    <Content Include="Controles\BusquedaDeuda.ascx" />
+    <Content Include="Controles\CalculoIndicadoresCobertura.ascx" />
+    <Content Include="Controles\Calendar.ascx" />
+    <Content Include="Controles\calendar.htm" />
+    <Content Include="Controles\CarteraCastigo.ascx" />
+    <Content Include="Controles\Chart.ascx" />
+    <Content Include="Controles\ChartColumn.ascx" />
+    <Content Include="Controles\Cliente.ascx" />
+    <Content Include="Controles\ClienteNoGestionado.ascx" />
+    <Content Include="Controles\Compromisos.ascx" />
+    <Content Include="Controles\ConsultaClientes.ascx" />
+    <Content Include="Controles\ConsultaCondiciones.ascx" />
+    <Content Include="Controles\ConsultaPagos.ascx" />
+    <Content Include="Controles\ConsultarProductoMontoCliente.ascx" />
+    <Content Include="Controles\CtCombo.ascx" />
+    <Content Include="Controles\CtlAdmGrupos.ascx" />
+    <Content Include="Controles\ctlAnalisisData.ascx" />
+    <Content Include="Controles\ctlAsignacion.ascx" />
+    <Content Include="Controles\CtlAsignarGestor.ascx" />
+    <Content Include="Controles\CtlCalling.ascx" />
+    <Content Include="Controles\CtlCamposBusqueda.ascx" />
+    <Content Include="Controles\CtlCboCartera.ascx" />
+    <Content Include="Controles\ctlConsulta.ascx" />
+    <Content Include="Controles\CtlConsultaPromesas.ascx" />
+    <Content Include="Controles\CtlCorreo.ascx" />
+    <Content Include="Controles\CtlCuadroMensaje.ascx" />
+    <Content Include="Controles\CtlDist.ascx" />
+    <Content Include="Controles\CtlDpto.ascx" />
+    <Content Include="Controles\CtlEditor.ascx" />
+    <Content Include="Controles\CtlEliminarAsignacion.ascx" />
+    <Content Include="Controles\CtlExportaDatos.ascx" />
+    <Content Include="Controles\CtlExportaFormatos.ascx" />
+    <Content Include="Controles\CtlGrilla.ascx" />
+    <Content Include="Controles\CtlImportarData.ascx" />
+    <Content Include="Controles\CtlImportExcel.ascx" />
+    <Content Include="Controles\CtlLlamadas.ascx" />
+    <Content Include="Controles\CtlLlamando.ascx" />
+    <Content Include="Controles\CtlLlamar.ascx" />
+    <Content Include="Controles\CtlMensajeAlerta.ascx" />
+    <Content Include="Controles\CtlMensajes.ascx" />
+    <Content Include="Controles\CtlMenu.ascx" />
+    <Content Include="Controles\ctlMntDirecciones.ascx" />
+    <Content Include="Controles\CtlModificarAsignacion.ascx" />
+    <Content Include="Controles\CtlNPerfil.ascx" />
+    <Content Include="Controles\CtlNuevaDireccion.ascx" />
+    <Content Include="Controles\CtlNuevaPromesas.ascx" />
+    <Content Include="Controles\CtlNuevoGrupo.ascx" />
+    <Content Include="Controles\CtlNuevoTelefono.ascx" />
+    <Content Include="Controles\CtlPagos.ascx" />
+    <Content Include="Controles\CtlProv.ascx" />
+    <Content Include="Controles\CtlReasignar.ascx" />
+    <Content Include="Controles\CtlReasignarGestor.ascx" />
+    <Content Include="Controles\CtlTelefono.ascx" />
+    <Content Include="Controles\CtlTxt.ascx" />
+    <Content Include="Controles\CtlValidaAcceso.ascx" />
+    <Content Include="Controles\DefinirCondicion.ascx" />
+    <Content Include="Controles\Gestion.ascx" />
+    <Content Include="Controles\GestionCliente.ascx" />
+    <Content Include="Controles\GraficoIndicadores.ascx" />
+    <Content Include="Controles\Metas.ascx" />
+    <Content Include="Controles\MetasCobranzasAvances.ascx" />
+    <Content Include="Controles\NAsignacion.ascx" />
+    <Content Include="Controles\NMCompromiso.ascx" />
+    <Content Include="Controles\NMPagos.ascx" />
+    <Content Include="Controles\NMUsuario.ascx" />
+    <Content Include="Controles\NuevaCartera.ascx" />
+    <Content Include="Controles\NuevaCondicion.ascx" />
+    <Content Include="Controles\NuevaEmpresa.ascx" />
+    <Content Include="Controles\NuevoCLienteGestionarCliente.ascx" />
+    <Content Include="Controles\Pagos.ascx" />
+    <Content Include="Controles\PagosCarteraCastigo.ascx" />
+    <Content Include="Controles\Popup.ascx" />
+    <Content Include="Controles\ReporteCampoCartera.ascx" />
+    <Content Include="Controles\ReporteCartasCampo.ascx" />
+    <Content Include="Controles\ReporteClienteEmpresaDireccionTrabajo.ascx" />
+    <Content Include="Controles\ReporteCobertura.ascx" />
+    <Content Include="Controles\ReporteComposicionCarteraGestor.ascx" />
+    <Content Include="Controles\ReporteCompromisos.ascx" />
+    <Content Include="Controles\ReporteCompromisosExternos.ascx" />
+    <Content Include="Controles\ReporteExternoGestionesRealizadas.ascx" />
+    <Content Include="Controles\ReporteGestionExterno.ascx" />
+    <Content Include="Controles\ReporteGestionInterno.ascx" />
+    <Content Include="Controles\ReporteInformacionCobertura.ascx" />
+    <Content Include="Controles\ReporteInternoGestionesRealizadas.ascx" />
+    <Content Include="Controles\ReportePagos.ascx" />
+    <Content Include="Controles\ReportePagosCarteraActiva.ascx" />
+    <Content Include="Controles\ReporteProductoOperacionCliente.ascx" />
+    <Content Include="Controles\ReporteTrabajo.ascx" />
+    <Content Include="Controles\ResultadoConsultaMontoCliente.ascx" />
+    <Content Include="Controles\Tareas.ascx" />
+    <Content Include="Controles\TipoCambio.ascx" />
+    <Content Include="Controles\Usuario.ascx" />
+    <Content Include="css\editor.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\textbox\style.css" />
+    <Content Include="Estadisticas.aspx" />
+    <Content Include="Estilos.css" />
+    <Content Include="EstilosTC.css" />
+    <Content Include="Exporta.aspx" />
+    <Content Include="ExportarData.aspx" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="AdministracionCliente.aspx" />
+    <Content Include="ConsultaProducto.aspx" />
+    <Content Include="CartasCampo.aspx" />
+    <Content Include="CAReporteGestionInterno.aspx" />
+    <Content Include="CAReportePago.aspx" />
+    <Content Include="CAReporteCartasCampo.aspx" />
+    <Content Include="ComposicionCarteraGlobal.aspx" />
+    <Content Include="Empresa.aspx" />
+    <Content Include="Asignacion.aspx" />
+    <Content Include="Gestion_Predictiva.aspx" />
+    <Content Include="Imagenes\03.jpg" />
+    <Content Include="Imagenes\BotonActualizar.png" />
+    <Content Include="Imagenes\BotonCerrar.png" />
+    <Content Include="Imagenes\BotonGenerarReporte.png" />
+    <Content Include="Imagenes\botonNuevo.png" />
+    <Content Include="Imagenes\BotonVerEstadisticas.png" />
+    <Content Include="Imagenes\btn_call_1.gif" />
+    <Content Include="Imagenes\btn_call_2.gif" />
+    <Content Include="Imagenes\btn_call_3.gif" />
+    <Content Include="Imagenes\calcular.png" />
+    <Content Include="Imagenes\cancel.png" />
+    <Content Include="Imagenes\cargando.gif" />
+    <Content Include="Imagenes\circle_fuxia.png" />
+    <Content Include="Imagenes\colgar1.png" />
+    <Content Include="Imagenes\Deudaf.png" />
+    <Content Include="Imagenes\DF.gif" />
+    <Content Include="Imagenes\DF2.gif" />
+    <Content Include="Imagenes\DF3.gif" />
+    <Content Include="Imagenes\excelente.jpg" />
+    <Content Include="Imagenes\excenlente.png" />
+    <Content Include="Imagenes\fallido.jpg" />
+    <Content Include="Imagenes\fotox.jpg" />
+    <Content Include="Imagenes\icono_producto2.png" />
+    <Content Include="Imagenes\image008.jpg" />
+    <Content Include="Imagenes\infadicional.png" />
+    <Content Include="Imagenes\iniciativa-empresarial.jpg" />
+    <Content Include="Imagenes\loader1.gif" />
+    <Content Include="Imagenes\logo coorp 4.jpg" />
+    <Content Include="Imagenes\logo telecontacto.png" />
+    <Content Include="Imagenes\mejorar.png" />
+    <Content Include="Imagenes\numtelfani.gif" />
+    <Content Include="Imagenes\oferta.png" />
+    <Content Include="Imagenes\pimay.jpeg" />
+    <Content Include="Imagenes\Pimay2.png" />
+    <Content Include="Imagenes\save.png" />
+    <Content Include="inicio.aspx" />
+    <Content Include="jqwidgets\globalization\globalize.culture.cs-CZ.js" />
+    <Content Include="jqwidgets\globalization\globalize.culture.de-DE.js" />
+    <Content Include="jqwidgets\globalization\globalize.culture.en-CA.js" />
+    <Content Include="jqwidgets\globalization\globalize.culture.en-US.js" />
+    <Content Include="jqwidgets\globalization\globalize.culture.fr-FR.js" />
+    <Content Include="jqwidgets\globalization\globalize.culture.he-IL.js" />
+    <Content Include="jqwidgets\globalization\globalize.culture.hr-HR.js" />
+    <Content Include="jqwidgets\globalization\globalize.culture.hu-HU.js" />
+    <Content Include="jqwidgets\globalization\globalize.culture.it-IT.js" />
+    <Content Include="jqwidgets\globalization\globalize.culture.ja-JP.js" />
+    <Content Include="jqwidgets\globalization\globalize.culture.lt.js" />
+    <Content Include="jqwidgets\globalization\globalize.culture.ru-RU.js" />
+    <Content Include="jqwidgets\globalization\globalize.culture.sa-IN.js" />
+    <Content Include="jqwidgets\globalization\globalize.js" />
+    <Content Include="jqwidgets\globalization\ReadMe.txt" />
+    <Content Include="jqwidgets\jqx-all.js" />
+    <Content Include="jqwidgets\jqxangular.js" />
+    <Content Include="jqwidgets\jqxbulletchart.js" />
+    <Content Include="jqwidgets\jqxbuttongroup.js" />
+    <Content Include="jqwidgets\jqxbuttons.js" />
+    <Content Include="jqwidgets\jqxcalendar.js" />
+    <Content Include="jqwidgets\jqxchart.annotations.js" />
+    <Content Include="jqwidgets\jqxchart.api.js" />
+    <Content Include="jqwidgets\jqxchart.core.js" />
+    <Content Include="jqwidgets\jqxchart.js" />
+    <Content Include="jqwidgets\jqxchart.rangeselector.js" />
+    <Content Include="jqwidgets\jqxchart.waterfall.js" />
+    <Content Include="jqwidgets\jqxcheckbox.js" />
+    <Content Include="jqwidgets\jqxcolorpicker.js" />
+    <Content Include="jqwidgets\jqxcombobox.js" />
+    <Content Include="jqwidgets\jqxcomplexinput.js" />
+    <Content Include="jqwidgets\jqxcore.js" />
+    <Content Include="jqwidgets\jqxdata.export.js" />
+    <Content Include="jqwidgets\jqxdata.js" />
+    <Content Include="jqwidgets\jqxdatatable.js" />
+    <Content Include="jqwidgets\jqxdate.js" />
+    <Content Include="jqwidgets\jqxdatetimeinput.js" />
+    <Content Include="jqwidgets\jqxdocking.js" />
+    <Content Include="jqwidgets\jqxdockinglayout.js" />
+    <Content Include="jqwidgets\jqxdockpanel.js" />
+    <Content Include="jqwidgets\jqxdragdrop.js" />
+    <Content Include="jqwidgets\jqxdraw.js" />
+    <Content Include="jqwidgets\jqxdropdownbutton.js" />
+    <Content Include="jqwidgets\jqxdropdownlist.js" />
+    <Content Include="jqwidgets\jqxeditor.js" />
+    <Content Include="jqwidgets\jqxexpander.js" />
+    <Content Include="jqwidgets\jqxfileupload.js" />
+    <Content Include="jqwidgets\jqxformattedinput.js" />
+    <Content Include="jqwidgets\jqxgauge.js" />
+    <Content Include="jqwidgets\jqxgrid.aggregates.js" />
+    <Content Include="jqwidgets\jqxgrid.columnsreorder.js" />
+    <Content Include="jqwidgets\jqxgrid.columnsresize.js" />
+    <Content Include="jqwidgets\jqxgrid.edit.js" />
+    <Content Include="jqwidgets\jqxgrid.export.js" />
+    <Content Include="jqwidgets\jqxgrid.filter.js" />
+    <Content Include="jqwidgets\jqxgrid.grouping.js" />
+    <Content Include="jqwidgets\jqxgrid.js" />
+    <Content Include="jqwidgets\jqxgrid.pager.js" />
+    <Content Include="jqwidgets\jqxgrid.selection.js" />
+    <Content Include="jqwidgets\jqxgrid.sort.js" />
+    <Content Include="jqwidgets\jqxgrid.storage.js" />
+    <Content Include="jqwidgets\jqxinput.js" />
+    <Content Include="jqwidgets\jqxknockout.js" />
+    <Content Include="jqwidgets\jqxlayout.js" />
+    <Content Include="jqwidgets\jqxlistbox.js" />
+    <Content Include="jqwidgets\jqxlistmenu.js" />
+    <Content Include="jqwidgets\jqxloader.js" />
+    <Content Include="jqwidgets\jqxmaskedinput.js" />
+    <Content Include="jqwidgets\jqxmenu.js" />
+    <Content Include="jqwidgets\jqxnavbar.js" />
+    <Content Include="jqwidgets\jqxnavigationbar.js" />
+    <Content Include="jqwidgets\jqxnotification.js" />
+    <Content Include="jqwidgets\jqxnumberinput.js" />
+    <Content Include="jqwidgets\jqxpanel.js" />
+    <Content Include="jqwidgets\jqxpasswordinput.js" />
+    <Content Include="jqwidgets\jqxpopover.js" />
+    <Content Include="jqwidgets\jqxprogressbar.js" />
+    <Content Include="jqwidgets\jqxradiobutton.js" />
+    <Content Include="jqwidgets\jqxrangeselector.js" />
+    <Content Include="jqwidgets\jqxrating.js" />
+    <Content Include="jqwidgets\jqxresponse.js" />
+    <Content Include="jqwidgets\jqxresponsivepanel.js" />
+    <Content Include="jqwidgets\jqxribbon.js" />
+    <Content Include="jqwidgets\jqxscheduler.api.js" />
+    <Content Include="jqwidgets\jqxscheduler.js" />
+    <Content Include="jqwidgets\jqxscrollbar.js" />
+    <Content Include="jqwidgets\jqxscrollview.js" />
+    <Content Include="jqwidgets\jqxslider.js" />
+    <Content Include="jqwidgets\jqxsplitter.js" />
+    <Content Include="jqwidgets\jqxswitchbutton.js" />
+    <Content Include="jqwidgets\jqxtabs.js" />
+    <Content Include="jqwidgets\jqxtagcloud.js" />
+    <Content Include="jqwidgets\jqxtextarea.js" />
+    <Content Include="jqwidgets\jqxtoolbar.js" />
+    <Content Include="jqwidgets\jqxtooltip.js" />
+    <Content Include="jqwidgets\jqxtouch.js" />
+    <Content Include="jqwidgets\jqxtree.js" />
+    <Content Include="jqwidgets\jqxtreegrid.js" />
+    <Content Include="jqwidgets\jqxtreemap.js" />
+    <Content Include="jqwidgets\jqxvalidator.js" />
+    <Content Include="jqwidgets\jqxwindow.js" />
+    <Content Include="jqwidgets\styles\images\backgroundTop.png" />
+    <Content Include="jqwidgets\styles\images\backImage.png" />
+    <Content Include="jqwidgets\styles\images\bg_black.png" />
+    <Content Include="jqwidgets\styles\images\bg_blackhover.png" />
+    <Content Include="jqwidgets\styles\images\bg_blackhover_horizontal.png" />
+    <Content Include="jqwidgets\styles\images\bg_blackpressed.png" />
+    <Content Include="jqwidgets\styles\images\bg_blackpressed_horizontal.png" />
+    <Content Include="jqwidgets\styles\images\bg_black_horizontal.png" />
+    <Content Include="jqwidgets\styles\images\bg_blueenergy.png" />
+    <Content Include="jqwidgets\styles\images\bg_darkblue.png" />
+    <Content Include="jqwidgets\styles\images\bg_darkbluehover.png" />
+    <Content Include="jqwidgets\styles\images\bg_darkbluepressed.png" />
+    <Content Include="jqwidgets\styles\images\blackbackground.png" />
+    <Content Include="jqwidgets\styles\images\black_gradient.png" />
+    <Content Include="jqwidgets\styles\images\check_black.png" />
+    <Content Include="jqwidgets\styles\images\check_blue.png" />
+    <Content Include="jqwidgets\styles\images\check_blue_indeterminate.png" />
+    <Content Include="jqwidgets\styles\images\check_disabled.png" />
+    <Content Include="jqwidgets\styles\images\check_indeterminate_black.png" />
+    <Content Include="jqwidgets\styles\images\check_indeterminate_disabled.png" />
+    <Content Include="jqwidgets\styles\images\check_indeterminate_white.png" />
+    <Content Include="jqwidgets\styles\images\check_lightblue.png" />
+    <Content Include="jqwidgets\styles\images\check_lightblue_indeterminate.png" />
+    <Content Include="jqwidgets\styles\images\check_white.png" />
+    <Content Include="jqwidgets\styles\images\close.png" />
+    <Content Include="jqwidgets\styles\images\close_black.png" />
+    <Content Include="jqwidgets\styles\images\close_blue.png" />
+    <Content Include="jqwidgets\styles\images\close_white.png" />
+    <Content Include="jqwidgets\styles\images\crosshair-white.png" />
+    <Content Include="jqwidgets\styles\images\crosshair.png" />
+    <Content Include="jqwidgets\styles\images\darkred_gradient.png" />
+    <Content Include="jqwidgets\styles\images\drag.png" />
+    <Content Include="jqwidgets\styles\images\dragcancel.png" />
+    <Content Include="jqwidgets\styles\images\error.png" />
+    <Content Include="jqwidgets\styles\images\filter.png" />
+    <Content Include="jqwidgets\styles\images\html_editor.png" />
+    <Content Include="jqwidgets\styles\images\html_editor_white.png" />
+    <Content Include="jqwidgets\styles\images\icon-calendar-white.png" />
+    <Content Include="jqwidgets\styles\images\icon-calendar.png" />
+    <Content Include="jqwidgets\styles\images\icon-cancel-white.png" />
+    <Content Include="jqwidgets\styles\images\icon-cancel.png" />
+    <Content Include="jqwidgets\styles\images\icon-delete-white.png" />
+    <Content Include="jqwidgets\styles\images\icon-delete.png" />
+    <Content Include="jqwidgets\styles\images\icon-down-blue.png" />
+    <Content Include="jqwidgets\styles\images\icon-down-transparent.png" />
+    <Content Include="jqwidgets\styles\images\icon-down-white.png" />
+    <Content Include="jqwidgets\styles\images\icon-down.png" />
+    <Content Include="jqwidgets\styles\images\icon-edit-white.png" />
+    <Content Include="jqwidgets\styles\images\icon-edit.png" />
+    <Content Include="jqwidgets\styles\images\icon-first-blue.png" />
+    <Content Include="jqwidgets\styles\images\icon-first-transparent.png" />
+    <Content Include="jqwidgets\styles\images\icon-first-white.png" />
+    <Content Include="jqwidgets\styles\images\icon-first.png" />
+    <Content Include="jqwidgets\styles\images\icon-last-blue.png" />
+    <Content Include="jqwidgets\styles\images\icon-last-transparent.png" />
+    <Content Include="jqwidgets\styles\images\icon-last-white.png" />
+    <Content Include="jqwidgets\styles\images\icon-last.png" />
+    <Content Include="jqwidgets\styles\images\icon-left-blue.png" />
+    <Content Include="jqwidgets\styles\images\icon-left-transparent.png" />
+    <Content Include="jqwidgets\styles\images\icon-left-white.png" />
+    <Content Include="jqwidgets\styles\images\icon-left.png" />
+    <Content Include="jqwidgets\styles\images\icon-menu-minimized-white.png" />
+    <Content Include="jqwidgets\styles\images\icon-menu-minimized.png" />
+    <Content Include="jqwidgets\styles\images\icon-recurrence-exception-white.png" />
+    <Content Include="jqwidgets\styles\images\icon-recurrence-exception.png" />
+    <Content Include="jqwidgets\styles\images\icon-recurrence-white.png" />
+    <Content Include="jqwidgets\styles\images\icon-recurrence.png" />
+    <Content Include="jqwidgets\styles\images\icon-right-blue.png" />
+    <Content Include="jqwidgets\styles\images\icon-right-transparent.png" />
+    <Content Include="jqwidgets\styles\images\icon-right-white.png" />
+    <Content Include="jqwidgets\styles\images\icon-right.png" />
+    <Content Include="jqwidgets\styles\images\icon-save-white.png" />
+    <Content Include="jqwidgets\styles\images\icon-save.png" />
+    <Content Include="jqwidgets\styles\images\icon-showpassword-white.png" />
+    <Content Include="jqwidgets\styles\images\icon-showpassword.png" />
+    <Content Include="jqwidgets\styles\images\icon-time-white.png" />
+    <Content Include="jqwidgets\styles\images\icon-time.png" />
+    <Content Include="jqwidgets\styles\images\icon-up-blue.png" />
+    <Content Include="jqwidgets\styles\images\icon-up-transparent.png" />
+    <Content Include="jqwidgets\styles\images\icon-up-white.png" />
+    <Content Include="jqwidgets\styles\images\icon-up.png" />
+    <Content Include="jqwidgets\styles\images\info.png" />
+    <Content Include="jqwidgets\styles\images\loader-small.gif" />
+    <Content Include="jqwidgets\styles\images\loader.gif" />
+    <Content Include="jqwidgets\styles\images\mail.png" />
+    <Content Include="jqwidgets\styles\images\menubutton.png" />
+    <Content Include="jqwidgets\styles\images\metro-icon-down-white.png" />
+    <Content Include="jqwidgets\styles\images\metro-icon-down.png" />
+    <Content Include="jqwidgets\styles\images\metro-icon-first-white.png" />
+    <Content Include="jqwidgets\styles\images\metro-icon-first.png" />
+    <Content Include="jqwidgets\styles\images\metro-icon-last-white.png" />
+    <Content Include="jqwidgets\styles\images\metro-icon-last.png" />
+    <Content Include="jqwidgets\styles\images\metro-icon-left-white.png" />
+    <Content Include="jqwidgets\styles\images\metro-icon-left.png" />
+    <Content Include="jqwidgets\styles\images\metro-icon-right - Copy.png" />
+    <Content Include="jqwidgets\styles\images\metro-icon-right-white.png" />
+    <Content Include="jqwidgets\styles\images\metro-icon-right.png" />
+    <Content Include="jqwidgets\styles\images\metro-icon-up-white.png" />
+    <Content Include="jqwidgets\styles\images\metro-icon-up.png" />
+    <Content Include="jqwidgets\styles\images\multi-arrow.gif" />
+    <Content Include="jqwidgets\styles\images\office-icon-down.png" />
+    <Content Include="jqwidgets\styles\images\office-icon-first.png" />
+    <Content Include="jqwidgets\styles\images\office-icon-last.png" />
+    <Content Include="jqwidgets\styles\images\office-icon-left.png" />
+    <Content Include="jqwidgets\styles\images\office-icon-right.png" />
+    <Content Include="jqwidgets\styles\images\office-icon-up.png" />
+    <Content Include="jqwidgets\styles\images\pin-black.png" />
+    <Content Include="jqwidgets\styles\jqx.android.css" />
+    <Content Include="jqwidgets\styles\jqx.arctic.css" />
+    <Content Include="jqwidgets\styles\jqx.base.css" />
+    <Content Include="jqwidgets\styles\jqx.black.css" />
+    <Content Include="jqwidgets\styles\jqx.blackberry.css" />
+    <Content Include="jqwidgets\styles\jqx.bootstrap.css" />
+    <Content Include="jqwidgets\styles\jqx.classic.css" />
+    <Content Include="jqwidgets\styles\jqx.darkblue.css" />
+    <Content Include="jqwidgets\styles\jqx.energyblue.css" />
+    <Content Include="jqwidgets\styles\jqx.fresh.css" />
+    <Content Include="jqwidgets\styles\jqx.glacier.css" />
+    <Content Include="jqwidgets\styles\jqx.highcontrast.css" />
+    <Content Include="jqwidgets\styles\jqx.metro.css" />
+    <Content Include="jqwidgets\styles\jqx.metrodark.css" />
+    <Content Include="jqwidgets\styles\jqx.mobile.css" />
+    <Content Include="jqwidgets\styles\jqx.office.css" />
+    <Content Include="jqwidgets\styles\jqx.orange.css" />
+    <Content Include="jqwidgets\styles\jqx.shinyblack.css" />
+    <Content Include="jqwidgets\styles\jqx.summer.css" />
+    <Content Include="jqwidgets\styles\jqx.ui-darkness.css" />
+    <Content Include="jqwidgets\styles\jqx.ui-le-frog.css" />
+    <Content Include="jqwidgets\styles\jqx.ui-lightness.css" />
+    <Content Include="jqwidgets\styles\jqx.ui-overcast.css" />
+    <Content Include="jqwidgets\styles\jqx.ui-redmond.css" />
+    <Content Include="jqwidgets\styles\jqx.ui-smoothness.css" />
+    <Content Include="jqwidgets\styles\jqx.ui-start.css" />
+    <Content Include="jqwidgets\styles\jqx.ui-sunny.css" />
+    <Content Include="jqwidgets\styles\jqx.web.css" />
+    <Content Include="jqwidgets\styles\jqx.windowsphone.css" />
+    <Content Include="js\Chart3.js" />
+    <Content Include="js\Chart3.min.js" />
+    <Content Include="js\jquery-1.4.2.min.js" />
+    <Content Include="js\jquery.timers.js" />
+    <Content Include="js\JsPrincipal.js" />
+    <Content Include="lib\easypiechart\jquery.easypiechart.min.js" />
+    <Content Include="lib\highcharts\highcharts.js" />
+    <Content Include="lib\jquery\jquery.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="MarcoExportar.aspx" />
+    <Content Include="Mensaje.aspx" />
+    <Content Include="Monitoreo.aspx" />
+    <Content Include="Predictivo.aspx" />
+    <Content Include="Propuesta.aspx" />
+    <Content Include="Gestion.aspx" />
+    <Content Include="Gestionarbk.aspx" />
+    <Content Include="Imagenes\256-2.png" />
+    <Content Include="Imagenes\ajax-loader.gif" />
+    <Content Include="Imagenes\arrowhl.png" />
+    <Content Include="Imagenes\arrowhr.png" />
+    <Content Include="Imagenes\arrowsub.png" />
+    <Content Include="Imagenes\arrowvb.png" />
+    <Content Include="Imagenes\arrowvt.png" />
+    <Content Include="Imagenes\bbuy.png" />
+    <Content Include="Imagenes\bbuy1.png" />
+    <Content Include="Imagenes\bbuy2.png" />
+    <Content Include="Imagenes\blue-purchase-32.png" />
+    <Content Include="Imagenes\bnews.png" />
+    <Content Include="Imagenes\botonlogin.png" />
+    <Content Include="Imagenes\BotonModificar.jpg" />
+    <Content Include="Imagenes\Bueno.png" />
+    <Content Include="Imagenes\buscar.jpg" />
+    <Content Include="Imagenes\ca.jpg" />
+    <Content Include="Imagenes\Calendar.jpg" />
+    <Content Include="Imagenes\Cambiar.png" />
+    <Content Include="Imagenes\Campo.png" />
+    <Content Include="Imagenes\check.png" />
+    <Content Include="Imagenes\circle_green.ico" />
+    <Content Include="Imagenes\circle_green.png" />
+    <Content Include="Imagenes\circle_grey.ico" />
+    <Content Include="Imagenes\circle_grey.png" />
+    <Content Include="Imagenes\circle_red.ico" />
+    <Content Include="Imagenes\circle_red.png" />
+    <Content Include="Imagenes\circle_yellow.ico" />
+    <Content Include="Imagenes\circle_yellow.png" />
+    <Content Include="Imagenes\Cob01.jpg" />
+    <Content Include="Imagenes\cob02.jpg" />
+    <Content Include="Imagenes\cob03.jpg" />
+    <Content Include="Imagenes\Cobranza.jpg" />
+    <Content Include="Imagenes\Compromiso.png" />
+    <Content Include="Imagenes\corner_blue_left.png" />
+    <Content Include="Imagenes\corner_blue_right.png" />
+    <Content Include="Imagenes\corner_inset_left.png" />
+    <Content Include="Imagenes\corner_inset_right.png" />
+    <Content Include="Imagenes\corner_left.png" />
+    <Content Include="Imagenes\corner_right.png" />
+    <Content Include="Imagenes\csv.jpg" />
+    <Content Include="Imagenes\CSV.png" />
+    <Content Include="Imagenes\dele.gif" />
+    <Content Include="Imagenes\dele.jpg" />
+    <Content Include="Imagenes\delete.gif" />
+    <Content Include="Imagenes\descargar.png" />
+    <Content Include="Imagenes\Deuda.png" />
+    <Content Include="Imagenes\dollar.png" />
+    <Content Include="Imagenes\dot.gif" />
+    <Content Include="Imagenes\dot_blue.png" />
+    <Content Include="Imagenes\ejecuta.png" />
+    <Content Include="Imagenes\ejemploEstadistica.png" />
+    <Content Include="Imagenes\email.jpg" />
+    <Content Include="Imagenes\Encabezado.png" />
+    <Content Include="Imagenes\entrar.png" />
+    <Content Include="Imagenes\Estudio-logo-negro.png" />
+    <Content Include="Imagenes\Estudio-logo-negroM.jpg" />
+    <Content Include="Imagenes\Estudio-logo-negroML.png" />
+    <Content Include="Imagenes\excel.png" />
+    <Content Include="Imagenes\fondo-correo-ing-12-jpg.jpg" />
+    <Content Include="Imagenes\FondoMartinez.png" />
+    <Content Include="Imagenes\fondo_login.gif" />
+    <Content Include="Imagenes\gestion-y-estrategia.png" />
+    <Content Include="Imagenes\gTelf.GIF" />
+    <Content Include="Imagenes\home.png" />
+    <Content Include="Imagenes\home1.png" />
+    <Content Include="Imagenes\home2.png" />
+    <Content Include="Imagenes\home3.png" />
+    <Content Include="Imagenes\hsep.png" />
+    <Content Include="Imagenes\imgCall1.png" />
+    <Content Include="Imagenes\imgCall2.png" />
+    <Content Include="Imagenes\imgCall3.png" />
+    <Content Include="Imagenes\imgCall4.png" />
+    <Content Include="Imagenes\imgCall5.png" />
+    <Content Include="Imagenes\imgCall6.png" />
+    <Content Include="Imagenes\ImgEditar - copia.jpg" />
+    <Content Include="Imagenes\ImgEditar.jpg" />
+    <Content Include="Imagenes\ImgEli - copia.png" />
+    <Content Include="Imagenes\ImgEli.png" />
+    <Content Include="Imagenes\ImgEstadistica01.jpg" />
+    <Content Include="Imagenes\ImgFondEM.jpg" />
+    <Content Include="Imagenes\ImgOpcion1.jpg" />
+    <Content Include="Imagenes\Importar.png" />
+    <Content Include="Imagenes\index.html" />
+    <Content Include="Imagenes\loader.gif" />
+    <Content Include="Imagenes\logo.jpg" />
+    <Content Include="Imagenes\logo.png" />
+    <Content Include="Imagenes\logologin.png" />
+    <Content Include="Imagenes\LogoM.jpg" />
+    <Content Include="Imagenes\LogoM.png" />
+    <Content Include="Imagenes\LogoMartinez.png" />
+    <Content Include="Imagenes\LogoMartinez1.png" />
+    <Content Include="Imagenes\logoRedondo.jpg" />
+    <Content Include="Imagenes\magnifier.png" />
+    <Content Include="Imagenes\mainbk.png" />
+    <Content Include="Imagenes\Max.png" />
+    <Content Include="Imagenes\menu_left.png" />
+    <Content Include="Imagenes\menu_right.png" />
+    <Content Include="Imagenes\Min.png" />
+    <Content Include="Imagenes\navigation.jpg" />
+    <Content Include="Imagenes\Notas.png" />
+    <Content Include="Imagenes\nuevo.png" />
+    <Content Include="Imagenes\o.png" />
+    <Content Include="Imagenes\pagina-en-construcción-ES-copia.jpg" />
+    <Content Include="Imagenes\Pago.png" />
+    <Content Include="Imagenes\PDF.png" />
+    <Content Include="Imagenes\samples.png" />
+    <Content Include="Imagenes\samples1.png" />
+    <Content Include="Imagenes\samples2.png" />
+    <Content Include="Imagenes\samples3.png" />
+    <Content Include="Imagenes\samples4.png" />
+    <Content Include="Imagenes\seguridad.png" />
+    <Content Include="Imagenes\selec.jpg" />
+    <Content Include="Imagenes\select.png" />
+    <Content Include="Imagenes\SemAmarillo.png" />
+    <Content Include="Imagenes\SemPlomo.png" />
+    <Content Include="Imagenes\SemRojo.png" />
+    <Content Include="Imagenes\SemVerde.png" />
+    <Content Include="Imagenes\service.png" />
+    <Content Include="Imagenes\service1.png" />
+    <Content Include="Imagenes\service2.png" />
+    <Content Include="Imagenes\service3.png" />
+    <Content Include="Imagenes\Siguiente.png" />
+    <Content Include="Imagenes\sms.jpg" />
+    <Content Include="Imagenes\sms1.jpg" />
+    <Content Include="Imagenes\sms2-1.jpg" />
+    <Content Include="Imagenes\sms2-2.jpg" />
+    <Content Include="Imagenes\sms2.jpg" />
+    <Content Include="Imagenes\sms3.jpg" />
+    <Content Include="Imagenes\sms4.jpg" />
+    <Content Include="Imagenes\sms5.jpg" />
+    <Content Include="Imagenes\smslogo.jpg" />
+    <Content Include="Imagenes\unnamed.png" />
+    <Content Include="Imagenes\user.png" />
+    <Content Include="Imagenes\User_Avatar-512.png" />
+    <Content Include="Imagenes\word.png" />
+    <Content Include="img\login-sprite.png" />
+    <Content Include="img\logo.jpg" />
+    <Content Include="img\logo.png" />
+    <Content Include="ImportarData.aspx" />
+    <Content Include="InformacionCoberturaGestor.aspx" />
+    <Content Include="InformacionCoberturaGlobal.aspx" />
+    <Content Include="js\Chart.min.js" />
+    <Content Include="js\dw_popup.js" />
+    <Content Include="js\html2canvas.js" />
+    <Content Include="js\jquery-ui.css" />
+    <Content Include="js\jquery-ui.js" />
+    <Content Include="js\jquery-ui.min.js" />
+    <Content Include="js\jquery.base64.js" />
+    <Content Include="js\jspdf.js" />
+    <Content Include="js\libs\base64.js" />
+    <Content Include="js\libs\jspdf.min.js" />
+    <Content Include="js\libs\jspdf.plugin.autotable.js" />
+    <Content Include="js\libs\sprintf.js" />
+    <Content Include="js\loader.js" />
+    <Content Include="js\src\Chart.Bar.js" />
+    <Content Include="js\src\Chart.Core.js" />
+    <Content Include="js\src\Chart.Doughnut.js" />
+    <Content Include="js\src\Chart.Line.js" />
+    <Content Include="js\src\Chart.PolarArea.js" />
+    <Content Include="js\src\Chart.Radar.js" />
+    <Content Include="js\tableExport.js" />
+    <Content Include="lib\control\progressbar.js" />
+    <Content Include="lib\control\progressbar.min.js" />
+    <Content Include="NPerfil.aspx" />
+    <Content Include="NUsuario.aspx" />
+    <Content Include="Observacion.aspx" />
+    <Content Include="PaginaGenerada.aspx" />
+    <Content Include="Pagos.aspx" />
+    <Content Include="Perfil.aspx" />
+    <Content Include="ReasignarGestor.aspx" />
+    <Content Include="ReporteAgenda.aspx" />
+    <Content Include="ReporteBolsa.aspx" />
+    <Content Include="ReportePago.aspx" />
+    <Content Include="ReporteGestionExterna.aspx" />
+    <Content Include="ReporteGestionInterna.aspx" />
+    <Content Include="RpteCompromisos.aspx" />
+    <Content Include="scripts\angular.min.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\calendar-es.js" />
+    <Content Include="scripts\calendar-utils.js" />
+    <Content Include="scripts\calendar.js" />
+    <Content Include="scripts\demos.js" />
+    <Content Include="scripts\documentation.js" />
+    <Content Include="scripts\format.js" />
+    <Content Include="scripts\gridview.js" />
+    <Content Include="scripts\gridviewScroll.js" />
+    <Content Include="scripts\gridviewScroll.min.js" />
+    <Content Include="scripts\jquery-1.10.2.min.js" />
+    <Content Include="scripts\jquery-1.11.1.min.js" />
+    <Content Include="scripts\jquery-2.0.2.min.js" />
+    <Content Include="scripts\jquery.mobile-1.4.3.min.js" />
+    <Content Include="scripts\json2.js" />
+    <Content Include="scripts\jspimay.js" />
+    <Content Include="scripts\knockout-2.2.1.js" />
+    <Content Include="scripts\knockout-3.0.0.js" />
+    <Content Include="scripts\knockout-mapping-2.0.0.js" />
+    <Content Include="scripts\prototype.js" />
+    <Content Include="scripts\require.js" />
+    <Content Include="scripts\scriptsSistema.js" />
+    <None Include="jqwidgets\desktop.ini" />
+    <None Include="jqwidgets\globalization\desktop.ini" />
+    <None Include="jqwidgets\styles\desktop.ini" />
+    <None Include="jqwidgets\styles\images\colorpicker\desktop.ini" />
+    <None Include="jqwidgets\styles\images\darkness\desktop.ini" />
+    <None Include="jqwidgets\styles\images\desktop.ini" />
+    <Content Include="MasterPage.Master" />
+    <None Include="jqwidgets\styles\images\le-frog\desktop.ini" />
+    <None Include="jqwidgets\styles\images\lightness\desktop.ini" />
+    <None Include="jqwidgets\styles\images\overcast\desktop.ini" />
+    <None Include="jqwidgets\styles\images\redmond\desktop.ini" />
+    <None Include="jqwidgets\styles\images\smoothness\desktop.ini" />
+    <None Include="jqwidgets\styles\images\start\desktop.ini" />
+    <None Include="jqwidgets\styles\images\sunny\desktop.ini" />
+    <None Include="psd\form login.psd" />
+    <Content Include="script\calendar-es.js" />
+    <Content Include="script\calendar-utils.js" />
+    <Content Include="script\calendar.js" />
+    <Content Include="script\demos.js" />
+    <Content Include="script\exporting.js" />
+    <Content Include="script\gridview.js" />
+    <Content Include="script\gridviewScroll.js" />
+    <Content Include="script\gridviewScroll.min.js" />
+    <Content Include="script\highcharts.js" />
+    <Content Include="script\jquery-1.11.1.min.js" />
+    <Content Include="script\jquery-1.6.2-vsdoc.js" />
+    <Content Include="script\jquery-1.6.2.min.js" />
+    <Content Include="script\jqx.base.css" />
+    <Content Include="script\jqxbuttons.js" />
+    <Content Include="script\jqxchart.annotations.js" />
+    <Content Include="script\jqxchart.api.js" />
+    <Content Include="script\jqxchart.core.js" />
+    <Content Include="script\jqxcore.js" />
+    <Content Include="script\jqxdata.js" />
+    <Content Include="script\jqxdraw.js" />
+    <Content Include="script\jqxgauge.js" />
+    <Content Include="script\jqxslider.js" />
+    <Content Include="script\jspimay.js" />
+    <Content Include="script\prototype.js" />
+    <Content Include="script\scriptsSistema.js" />
+    <Content Include="SeleccionPerfil.aspx" />
+    <None Include="scripts\angular.min.js.map" />
+    <None Include="scripts\desktop.ini" />
+    <None Include="scripts\jquery-1.10.2.min.map" />
+    <None Include="scripts\jquery-1.11.1.min.map" />
+    <None Include="scripts\jquery.mobile-1.4.3.min.map" />
+    <None Include="script\desktop.ini" />
+    <None Include="script\jquery-1.11.1.min.map" />
+    <None Include="Service References\svllamadas\llamadas.disco" />
+    <None Include="Service References\svllamadas\configuration91.svcinfo" />
+    <None Include="Service References\svllamadas\configuration.svcinfo" />
+    <None Include="Service References\svllamadas\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="style\gridview.css" />
+    <Content Include="style\login.css" />
+    <Content Include="Tarea.aspx" />
+    <Content Include="TipoCambio.aspx" />
+    <Content Include="ReporteTrabajo.aspx" />
+    <Content Include="ReporteCompromisoExterno.aspx" />
+    <Content Include="Imagenes\Aceptar.png" />
+    <Content Include="Imagenes\boton busqueda.jpg" />
+    <Content Include="Imagenes\BotonAceptar.jpg" />
+    <Content Include="Imagenes\BotonAgendar.png" />
+    <Content Include="Imagenes\BotonBuscarContacto.jpg" />
+    <Content Include="Imagenes\BotonBusquedaPequena.png" />
+    <Content Include="Imagenes\BotonCerrar.jpg" />
+    <Content Include="Imagenes\BotonDefinirCD.jpg" />
+    <Content Include="Imagenes\BotonEliminar.png" />
+    <Content Include="Imagenes\botonExcel.jpg" />
+    <Content Include="Imagenes\BotonExportarExcel.jpg" />
+    <Content Include="Imagenes\BotonGenerarReporte.jpg" />
+    <Content Include="Imagenes\BotonGestionar.png" />
+    <Content Include="Imagenes\BotonGestiones.png" />
+    <Content Include="Imagenes\BotonGrabar.png" />
+    <Content Include="Imagenes\BotonHome.png" />
+    <Content Include="Imagenes\BotonImportarTelefonos.png" />
+    <Content Include="Imagenes\BotonMetas.png" />
+    <Content Include="Imagenes\BotonModificar.png" />
+    <Content Include="Imagenes\botonNuevo.jpg" />
+    <Content Include="Imagenes\BotonPagos.png" />
+    <Content Include="Imagenes\BotonReporte.jpg" />
+    <Content Include="Imagenes\BotonVerDetalle.jpg" />
+    <Content Include="Imagenes\BotonVerEstadisticas.jpg" />
+    <Content Include="Imagenes\calendario.png" />
+    <Content Include="Imagenes\ConsultarProductos.jpg" />
+    <Content Include="Imagenes\ImportarExcel.gif" />
+    <Content Include="images\VerTodasGestiones.png" />
+    <Content Include="images\1.png" />
+    <Content Include="Principal.aspx" />
+    <Content Include="js\Chart.js" />
+    <Content Include="js\clndr.js" />
+    <Content Include="js\jquery.vmap.js" />
+    <Content Include="js\jquery.vmap.sampledata.js" />
+    <Content Include="js\jquery.vmap.world.js" />
+    <Content Include="js\moment-2.2.1.js" />
+    <Content Include="js\site.js" />
+    <Content Include="js\underscore-min.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\d3.v3.js" />
+    <Content Include="js\metisMenu.min.js" />
+    <Content Include="js\rickshaw.js" />
+    <Content Include="ReporteCompromisos.aspx" />
+    <Content Include="style\clndr.css" />
+    <Content Include="style\custom.css" />
+    <Content Include="style\jqvmap.css" />
+    <Content Include="style\lines.css" />
+    <Content Include="Usuario.aspx" />
+    <Content Include="VB.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\svllamadas\llamadas.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\svllamadas\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BE\BE.vbproj">
+      <Project>{D5F0BF87-9BA6-440C-8B03-C9ADFE287871}</Project>
+      <Name>BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BL\BL.vbproj">
+      <Project>{3EB3576B-C6E3-48F7-9C24-0A072786FF35}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConDB\ConDB.vbproj">
+      <Project>{2D525545-1C19-45BE-9EEF-0A3B47328A37}</Project>
+      <Name>ConDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controles\Controles.vbproj">
+      <Project>{272AADDF-DF47-499A-907F-A4D9F8360769}</Project>
+      <Name>Controles</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="App_Themes\" />
+    <Folder Include="css\lib\" />
+    <Folder Include="Files\" />
+    <Folder Include="FOTOS\" />
+    <Folder Include="obj\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65498</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>copy $(SolutionDir)Controles\Controles\*.ascx $(ProjectDir)Controles\
+copy $(SolutionDir)Controles\Controles\*.html $(ProjectDir)Controles\
+copy $(SolutionDir)Controles\Controles\*.htm $(ProjectDir)Controles\</PreBuildEvent>
+  </PropertyGroup>
+</Project>

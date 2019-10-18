@@ -1,0 +1,1202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{272AADDF-DF47-499A-907F-A4D9F8360769}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Controles</RootNamespace>
+    <AssemblyName>Controles</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Controles.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Controles.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.7.1213, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Cobranza\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin, Version=4.97.4951.28478, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL" />
+    <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL" />
+    <Reference Include="itextsharp, Version=5.1.3.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Cobranza\bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="MySql.Data, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\AjaxMin.dll" />
+    <Content Include="bin\BE.dll" />
+    <Content Include="bin\BE.pdb" />
+    <Content Include="bin\BL.dll" />
+    <Content Include="bin\BL.pdb" />
+    <Content Include="bin\BL.xml" />
+    <Content Include="bin\ConDB.dll" />
+    <Content Include="bin\ConDB.pdb" />
+    <Content Include="bin\HtmlAgilityPack.dll" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="bin\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="bin\Microsoft.Office.Interop.Excel.xml" />
+    <Content Include="bin\Microsoft.Vbe.Interop.dll" />
+    <Content Include="bin\MySql.Data.dll" />
+    <Content Include="bin\MySql.Web.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\office.dll" />
+    <Content Include="bin\office.xml" />
+    <Content Include="bin\System.Web.DataVisualization.dll" />
+    <Content Include="Controles\ActualizarConsultaProductos.ascx" />
+    <Content Include="Controles\AdministracionEmpresa.ascx" />
+    <Content Include="Controles\AdministrarCarteras.ascx" />
+    <Content Include="Controles\Agenda.ascx" />
+    <Content Include="Controles\Agendar.ascx" />
+    <Content Include="Controles\Botones.ascx" />
+    <Content Include="Controles\BusquedaAgenda.ascx" />
+    <Content Include="Controles\BusquedaBolsa.ascx" />
+    <Content Include="Controles\BusquedaDatos.ascx" />
+    <Content Include="Controles\BusquedaDeuda.ascx" />
+    <Content Include="Controles\CalculoIndicadoresCobertura.ascx" />
+    <Content Include="Controles\Calendar.ascx" />
+    <Content Include="Controles\calendar.htm" />
+    <Content Include="Controles\CarteraCastigo.ascx" />
+    <Content Include="Controles\Chart.ascx" />
+    <Content Include="Controles\ChartColumn.ascx" />
+    <Content Include="Controles\Cliente.ascx" />
+    <Content Include="Controles\ClienteNoGestionado.ascx" />
+    <Content Include="Controles\Compromisos.ascx" />
+    <Content Include="Controles\ConsultaClientes.ascx" />
+    <Content Include="Controles\ConsultaCondiciones.ascx" />
+    <Content Include="Controles\ConsultaPagos.ascx" />
+    <Content Include="Controles\ConsultarProductoMontoCliente.ascx" />
+    <Content Include="Controles\Convenios.ascx" />
+    <Content Include="Controles\CtCombo.ascx" />
+    <Content Include="Controles\CtlAdmGrupos.ascx" />
+    <Content Include="Controles\ctlAnalisisData.ascx" />
+    <Content Include="Controles\ctlAsignacion.ascx" />
+    <Content Include="Controles\CtlAsignarGestor.ascx" />
+    <Content Include="Controles\CtlCalling.ascx" />
+    <Content Include="Controles\CtlCboCartera.ascx" />
+    <Content Include="Controles\ctlConsulta.ascx" />
+    <Content Include="Controles\CtlConsultaPromesas.ascx" />
+    <Content Include="Controles\CtlCorreo.ascx" />
+    <Content Include="Controles\CtlCuadroMensaje.ascx" />
+    <Content Include="Controles\CtlDist.ascx" />
+    <Content Include="Controles\CtlDpto.ascx" />
+    <Content Include="Controles\CtlEditor.ascx" />
+    <Content Include="Controles\CtlEliminarAsignacion.ascx" />
+    <Content Include="Controles\CtlExportaDatos.ascx" />
+    <Content Include="Controles\CtlExportaFormatos.ascx" />
+    <Content Include="Controles\CtlGrilla.ascx" />
+    <Content Include="Controles\CtlImportarData.ascx" />
+    <Content Include="Controles\CtlImportExcel.ascx" />
+    <Content Include="Controles\CtlLlamadas.ascx" />
+    <Content Include="Controles\CtlLlamando.ascx" />
+    <Content Include="Controles\CtlLlamar.ascx" />
+    <Content Include="Controles\CtlMensajeAlerta.ascx" />
+    <Content Include="Controles\CtlMensajes.ascx" />
+    <Content Include="Controles\CtlMenu.ascx" />
+    <Content Include="Controles\ctlMntDirecciones.ascx" />
+    <Content Include="Controles\CtlModificarAsignacion.ascx" />
+    <Content Include="Controles\CtlNPerfil.ascx" />
+    <Content Include="Controles\CtlNuevaDireccion.ascx" />
+    <Content Include="Controles\CtlNuevaPromesas.ascx" />
+    <Content Include="Controles\CtlNuevoGrupo.ascx" />
+    <Content Include="Controles\CtlNuevoTelefono.ascx" />
+    <Content Include="Controles\CtlPagos.ascx" />
+    <Content Include="Controles\CtlProv.ascx" />
+    <Content Include="Controles\CtlReasignar.ascx" />
+    <Content Include="Controles\CtlReasignarGestor.ascx" />
+    <Content Include="Controles\CtlTelefono.ascx" />
+    <Content Include="Controles\CtlTxt.ascx" />
+    <Content Include="Controles\CtlValidaAcceso.ascx" />
+    <Content Include="Controles\DefinirCondicion.ascx" />
+    <Content Include="Controles\Gestion.ascx" />
+    <Content Include="Controles\GestionCliente.ascx" />
+    <Content Include="Controles\GraficoIndicadores.ascx" />
+    <Content Include="Controles\Metas.ascx" />
+    <Content Include="Controles\MetasCobranzasAvances.ascx" />
+    <Content Include="Controles\NAsignacion.ascx" />
+    <Content Include="Controles\NConvenios.ascx" />
+    <Content Include="Controles\NMCompromiso.ascx" />
+    <Content Include="Controles\NMPagos.ascx" />
+    <Content Include="Controles\NMUsuario.ascx" />
+    <Content Include="Controles\NuevaCartera.ascx" />
+    <Content Include="Controles\NuevaCondicion.ascx" />
+    <Content Include="Controles\NuevaEmpresa.ascx" />
+    <Content Include="Controles\NuevoCLienteGestionarCliente.ascx" />
+    <Content Include="Controles\Pagos.ascx" />
+    <Content Include="Controles\PagosCarteraCastigo.ascx" />
+    <Content Include="Controles\Popup.ascx" />
+    <Content Include="Controles\ReporteCampoCartera.ascx" />
+    <Content Include="Controles\ReporteCartasCampo.ascx" />
+    <Content Include="Controles\ReporteClienteEmpresaDireccionTrabajo.ascx" />
+    <Content Include="Controles\ReporteCobertura.ascx" />
+    <Content Include="Controles\ReporteComposicionCarteraGestor.ascx" />
+    <Content Include="Controles\ReporteCompromisos.ascx" />
+    <Content Include="Controles\ReporteCompromisosExternos.ascx" />
+    <Content Include="Controles\ReporteExternoGestionesRealizadas.ascx" />
+    <Content Include="Controles\ReporteGestionExterno.ascx" />
+    <Content Include="Controles\ReporteGestionInterno.ascx" />
+    <Content Include="Controles\ReporteInformacionCobertura.ascx" />
+    <Content Include="Controles\ReporteInternoGestionesRealizadas.ascx" />
+    <Content Include="Controles\ReportePagos.ascx" />
+    <Content Include="Controles\ReportePagosCarteraActiva.ascx" />
+    <Content Include="Controles\ReporteProductoOperacionCliente.ascx" />
+    <Content Include="Controles\ReporteTrabajo.ascx" />
+    <Content Include="Controles\ResultadoConsultaMontoCliente.ascx" />
+    <Content Include="Controles\Tareas.ascx" />
+    <Content Include="Controles\TipoCambio.ascx" />
+    <Content Include="Controles\Usuario.ascx" />
+    <Content Include="Controles\CtlCamposBusqueda.ascx" />
+    <Content Include="Imagenes\256-2.png" />
+    <Content Include="Imagenes\Aceptar.png" />
+    <Content Include="Imagenes\ajax-loader.gif" />
+    <Content Include="Imagenes\arrowhl.png" />
+    <Content Include="Imagenes\arrowhr.png" />
+    <Content Include="Imagenes\arrowsub.png" />
+    <Content Include="Imagenes\arrowvb.png" />
+    <Content Include="Imagenes\arrowvt.png" />
+    <Content Include="Imagenes\bbuy.png" />
+    <Content Include="Imagenes\bbuy1.png" />
+    <Content Include="Imagenes\bbuy2.png" />
+    <Content Include="Imagenes\blue-purchase-32.png" />
+    <Content Include="Imagenes\bnews.png" />
+    <Content Include="Imagenes\boton busqueda.jpg" />
+    <Content Include="Imagenes\BotonAceptar.jpg" />
+    <Content Include="Imagenes\BotonAgendar.png" />
+    <Content Include="Imagenes\BotonBuscarContacto.jpg" />
+    <Content Include="Imagenes\BotonBusquedaPequena.png" />
+    <Content Include="Imagenes\BotonCerrar.jpg" />
+    <Content Include="Imagenes\BotonDefinirCD.jpg" />
+    <Content Include="Imagenes\BotonEliminar.png" />
+    <Content Include="Imagenes\botonExcel.jpg" />
+    <Content Include="Imagenes\BotonExportarExcel.jpg" />
+    <Content Include="Imagenes\BotonGenerarReporte.jpg" />
+    <Content Include="Imagenes\BotonGestionar.png" />
+    <Content Include="Imagenes\BotonGestiones.png" />
+    <Content Include="Imagenes\BotonGrabar.png" />
+    <Content Include="Imagenes\BotonHome.png" />
+    <Content Include="Imagenes\BotonImportarTelefonos.png" />
+    <Content Include="Imagenes\botonlogin.png" />
+    <Content Include="Imagenes\BotonMetas.png" />
+    <Content Include="Imagenes\BotonModificar.jpg" />
+    <Content Include="Imagenes\BotonModificar.png" />
+    <Content Include="Imagenes\botonNuevo.jpg" />
+    <Content Include="Imagenes\BotonPagos.png" />
+    <Content Include="Imagenes\BotonReporte.jpg" />
+    <Content Include="Imagenes\BotonVerDetalle.jpg" />
+    <Content Include="Imagenes\BotonVerEstadisticas.jpg" />
+    <Content Include="Imagenes\Bueno.png" />
+    <Content Include="Imagenes\buscar.jpg" />
+    <Content Include="Imagenes\ca.jpg" />
+    <Content Include="Imagenes\Calendar.jpg" />
+    <Content Include="Imagenes\calendario.png" />
+    <Content Include="Imagenes\Cambiar.png" />
+    <Content Include="Imagenes\Campo.png" />
+    <Content Include="Imagenes\check.png" />
+    <Content Include="Imagenes\circle_green.ico" />
+    <Content Include="Imagenes\circle_green.png" />
+    <Content Include="Imagenes\circle_grey.ico" />
+    <Content Include="Imagenes\circle_grey.png" />
+    <Content Include="Imagenes\circle_red.ico" />
+    <Content Include="Imagenes\circle_red.png" />
+    <Content Include="Imagenes\circle_yellow.ico" />
+    <Content Include="Imagenes\circle_yellow.png" />
+    <Content Include="Imagenes\Cob01.jpg" />
+    <Content Include="Imagenes\cob02.jpg" />
+    <Content Include="Imagenes\cob03.jpg" />
+    <Content Include="Imagenes\Cobranza.jpg" />
+    <Content Include="Imagenes\Compromiso.png" />
+    <Content Include="Imagenes\ConsultarProductos.jpg" />
+    <Content Include="Imagenes\corner_blue_left.png" />
+    <Content Include="Imagenes\corner_blue_right.png" />
+    <Content Include="Imagenes\corner_inset_left.png" />
+    <Content Include="Imagenes\corner_inset_right.png" />
+    <Content Include="Imagenes\corner_left.png" />
+    <Content Include="Imagenes\corner_right.png" />
+    <Content Include="Imagenes\csv.jpg" />
+    <Content Include="Imagenes\CSV.png" />
+    <Content Include="Imagenes\dele.gif" />
+    <Content Include="Imagenes\dele.jpg" />
+    <Content Include="Imagenes\delete.gif" />
+    <Content Include="Imagenes\descargar.png" />
+    <Content Include="Imagenes\Deuda.png" />
+    <Content Include="Imagenes\dollar.png" />
+    <Content Include="Imagenes\dot.gif" />
+    <Content Include="Imagenes\dot_blue.png" />
+    <Content Include="Imagenes\ejecuta.png" />
+    <Content Include="Imagenes\ejemploEstadistica.png" />
+    <Content Include="Imagenes\email.jpg" />
+    <Content Include="Imagenes\Encabezado.png" />
+    <Content Include="Imagenes\Estudio-logo-negro.png" />
+    <Content Include="Imagenes\Estudio-logo-negroM.jpg" />
+    <Content Include="Imagenes\Estudio-logo-negroML.png" />
+    <Content Include="Imagenes\excel.png" />
+    <Content Include="Imagenes\fondo-correo-ing-12-jpg.jpg" />
+    <Content Include="Imagenes\FondoMartinez.png" />
+    <Content Include="Imagenes\fondo_login.gif" />
+    <Content Include="Imagenes\gestion-y-estrategia.png" />
+    <Content Include="Imagenes\gTelf.GIF" />
+    <Content Include="Imagenes\home.png" />
+    <Content Include="Imagenes\home1.png" />
+    <Content Include="Imagenes\home2.png" />
+    <Content Include="Imagenes\home3.png" />
+    <Content Include="Imagenes\hsep.png" />
+    <Content Include="Imagenes\imgCall1.png" />
+    <Content Include="Imagenes\imgCall2.png" />
+    <Content Include="Imagenes\imgCall3.png" />
+    <Content Include="Imagenes\imgCall4.png" />
+    <Content Include="Imagenes\imgCall5.png" />
+    <Content Include="Imagenes\imgCall6.png" />
+    <Content Include="Imagenes\ImgEditar - copia.jpg" />
+    <Content Include="Imagenes\ImgEditar.jpg" />
+    <Content Include="Imagenes\ImgEli - copia.png" />
+    <Content Include="Imagenes\ImgEli.png" />
+    <Content Include="Imagenes\ImgEstadistica01.jpg" />
+    <Content Include="Imagenes\ImgFondEM.jpg" />
+    <Content Include="Imagenes\ImgOpcion1.jpg" />
+    <Content Include="Imagenes\Importar.png" />
+    <Content Include="Imagenes\ImportarExcel.gif" />
+    <Content Include="Imagenes\index.html" />
+    <Content Include="Imagenes\loader.gif" />
+    <Content Include="Imagenes\logo.jpg" />
+    <Content Include="Imagenes\logo.png" />
+    <Content Include="Imagenes\logologin.png" />
+    <Content Include="Imagenes\LogoM.jpg" />
+    <Content Include="Imagenes\LogoM.png" />
+    <Content Include="Imagenes\LogoMartinez.png" />
+    <Content Include="Imagenes\LogoMartinez1.png" />
+    <Content Include="Imagenes\logoRedondo.jpg" />
+    <Content Include="Imagenes\magnifier.png" />
+    <Content Include="Imagenes\mainbk.png" />
+    <Content Include="Imagenes\Max.png" />
+    <Content Include="Imagenes\menu_left.png" />
+    <Content Include="Imagenes\menu_right.png" />
+    <Content Include="Imagenes\Min.png" />
+    <Content Include="Imagenes\navigation.jpg" />
+    <Content Include="Imagenes\Notas.png" />
+    <Content Include="Imagenes\nuevo.png" />
+    <Content Include="Imagenes\o.png" />
+    <Content Include="Imagenes\pagina-en-construcción-ES-copia.jpg" />
+    <Content Include="Imagenes\Pago.png" />
+    <Content Include="Imagenes\PDF.png" />
+    <Content Include="Imagenes\samples.png" />
+    <Content Include="Imagenes\samples1.png" />
+    <Content Include="Imagenes\samples2.png" />
+    <Content Include="Imagenes\samples3.png" />
+    <Content Include="Imagenes\samples4.png" />
+    <Content Include="Imagenes\seguridad.png" />
+    <Content Include="Imagenes\selec.jpg" />
+    <Content Include="Imagenes\select.png" />
+    <Content Include="Imagenes\SemAmarillo.png" />
+    <Content Include="Imagenes\SemPlomo.png" />
+    <Content Include="Imagenes\SemRojo.png" />
+    <Content Include="Imagenes\SemVerde.png" />
+    <Content Include="Imagenes\service.png" />
+    <Content Include="Imagenes\service1.png" />
+    <Content Include="Imagenes\service2.png" />
+    <Content Include="Imagenes\service3.png" />
+    <Content Include="Imagenes\Siguiente.png" />
+    <Content Include="Imagenes\sms.jpg" />
+    <Content Include="Imagenes\sms1.jpg" />
+    <Content Include="Imagenes\sms2-1.jpg" />
+    <Content Include="Imagenes\sms2-2.jpg" />
+    <Content Include="Imagenes\sms2.jpg" />
+    <Content Include="Imagenes\sms3.jpg" />
+    <Content Include="Imagenes\sms4.jpg" />
+    <Content Include="Imagenes\sms5.jpg" />
+    <Content Include="Imagenes\smslogo.jpg" />
+    <Content Include="Imagenes\unnamed.png" />
+    <Content Include="Imagenes\user.png" />
+    <Content Include="Imagenes\User_Avatar-512.png" />
+    <Content Include="Imagenes\VerTodasGestiones.png" />
+    <Content Include="Imagenes\word.png" />
+    <Content Include="NuevoGrupo.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controles\ActualizarConsultaProductos.ascx.designer.vb">
+      <DependentUpon>ActualizarConsultaProductos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ActualizarConsultaProductos.ascx.vb">
+      <DependentUpon>ActualizarConsultaProductos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\AdministracionEmpresa.ascx.designer.vb">
+      <DependentUpon>AdministracionEmpresa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\AdministracionEmpresa.ascx.vb">
+      <DependentUpon>AdministracionEmpresa.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\AdministrarCarteras.ascx.designer.vb">
+      <DependentUpon>AdministrarCarteras.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\AdministrarCarteras.ascx.vb">
+      <DependentUpon>AdministrarCarteras.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Agenda.ascx.designer.vb">
+      <DependentUpon>Agenda.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Agenda.ascx.vb">
+      <DependentUpon>Agenda.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Agendar.ascx.designer.vb">
+      <DependentUpon>Agendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Agendar.ascx.vb">
+      <DependentUpon>Agendar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Botones.ascx.designer.vb">
+      <DependentUpon>Botones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Botones.ascx.vb">
+      <DependentUpon>Botones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\BusquedaAgenda.ascx.designer.vb">
+      <DependentUpon>BusquedaAgenda.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\BusquedaAgenda.ascx.vb">
+      <DependentUpon>BusquedaAgenda.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\BusquedaBolsa.ascx.designer.vb">
+      <DependentUpon>BusquedaBolsa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\BusquedaBolsa.ascx.vb">
+      <DependentUpon>BusquedaBolsa.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\BusquedaDatos.ascx.designer.vb">
+      <DependentUpon>BusquedaDatos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\BusquedaDatos.ascx.vb">
+      <DependentUpon>BusquedaDatos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\BusquedaDeuda.ascx.designer.vb">
+      <DependentUpon>BusquedaDeuda.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\BusquedaDeuda.ascx.vb">
+      <DependentUpon>BusquedaDeuda.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CalculoIndicadoresCobertura.ascx.designer.vb">
+      <DependentUpon>CalculoIndicadoresCobertura.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CalculoIndicadoresCobertura.ascx.vb">
+      <DependentUpon>CalculoIndicadoresCobertura.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Calendar.ascx.designer.vb">
+      <DependentUpon>Calendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Calendar.ascx.vb">
+      <DependentUpon>Calendar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CarteraCastigo.ascx.designer.vb">
+      <DependentUpon>CarteraCastigo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CarteraCastigo.ascx.vb">
+      <DependentUpon>CarteraCastigo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Chart.ascx.designer.vb">
+      <DependentUpon>Chart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Chart.ascx.vb">
+      <DependentUpon>Chart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ChartColumn.ascx.designer.vb">
+      <DependentUpon>ChartColumn.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ChartColumn.ascx.vb">
+      <DependentUpon>ChartColumn.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Cliente.ascx.designer.vb">
+      <DependentUpon>Cliente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Cliente.ascx.vb">
+      <DependentUpon>Cliente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ClienteNoGestionado.ascx.designer.vb">
+      <DependentUpon>ClienteNoGestionado.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ClienteNoGestionado.ascx.vb">
+      <DependentUpon>ClienteNoGestionado.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Compromisos.ascx.designer.vb">
+      <DependentUpon>Compromisos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Compromisos.ascx.vb">
+      <DependentUpon>Compromisos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ConsultaClientes.ascx.designer.vb">
+      <DependentUpon>ConsultaClientes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ConsultaClientes.ascx.vb">
+      <DependentUpon>ConsultaClientes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ConsultaCondiciones.ascx.designer.vb">
+      <DependentUpon>ConsultaCondiciones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ConsultaCondiciones.ascx.vb">
+      <DependentUpon>ConsultaCondiciones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ConsultaPagos.ascx.designer.vb">
+      <DependentUpon>ConsultaPagos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ConsultaPagos.ascx.vb">
+      <DependentUpon>ConsultaPagos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ConsultarProductoMontoCliente.ascx.designer.vb">
+      <DependentUpon>ConsultarProductoMontoCliente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ConsultarProductoMontoCliente.ascx.vb">
+      <DependentUpon>ConsultarProductoMontoCliente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Convenios.ascx.designer.vb">
+      <DependentUpon>Convenios.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Convenios.ascx.vb">
+      <DependentUpon>Convenios.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtCombo.ascx.designer.vb">
+      <DependentUpon>CtCombo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtCombo.ascx.vb">
+      <DependentUpon>CtCombo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlAdmGrupos.ascx.designer.vb">
+      <DependentUpon>CtlAdmGrupos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlAdmGrupos.ascx.vb">
+      <DependentUpon>CtlAdmGrupos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ctlAnalisisData.ascx.designer.vb">
+      <DependentUpon>ctlAnalisisData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ctlAnalisisData.ascx.vb">
+      <DependentUpon>ctlAnalisisData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ctlAsignacion.ascx.designer.vb">
+      <DependentUpon>ctlAsignacion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ctlAsignacion.ascx.vb">
+      <DependentUpon>ctlAsignacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlAsignarGestor.ascx.designer.vb">
+      <DependentUpon>CtlAsignarGestor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlAsignarGestor.ascx.vb">
+      <DependentUpon>CtlAsignarGestor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlCalling.ascx.designer.vb">
+      <DependentUpon>CtlCalling.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlCalling.ascx.vb">
+      <DependentUpon>CtlCalling.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlCboCartera.ascx.designer.vb">
+      <DependentUpon>CtlCboCartera.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlCboCartera.ascx.vb">
+      <DependentUpon>CtlCboCartera.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ctlConsulta.ascx.designer.vb">
+      <DependentUpon>ctlConsulta.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ctlConsulta.ascx.vb">
+      <DependentUpon>ctlConsulta.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlConsultaPromesas.ascx.designer.vb">
+      <DependentUpon>CtlConsultaPromesas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlConsultaPromesas.ascx.vb">
+      <DependentUpon>CtlConsultaPromesas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlCorreo.ascx.designer.vb">
+      <DependentUpon>CtlCorreo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlCorreo.ascx.vb">
+      <DependentUpon>CtlCorreo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlCuadroMensaje.ascx.designer.vb">
+      <DependentUpon>CtlCuadroMensaje.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlCuadroMensaje.ascx.vb">
+      <DependentUpon>CtlCuadroMensaje.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlDist.ascx.designer.vb">
+      <DependentUpon>CtlDist.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlDist.ascx.vb">
+      <DependentUpon>CtlDist.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlDpto.ascx.designer.vb">
+      <DependentUpon>CtlDpto.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlDpto.ascx.vb">
+      <DependentUpon>CtlDpto.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlEditor.ascx.designer.vb">
+      <DependentUpon>CtlEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlEditor.ascx.vb">
+      <DependentUpon>CtlEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlEliminarAsignacion.ascx.designer.vb">
+      <DependentUpon>CtlEliminarAsignacion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlEliminarAsignacion.ascx.vb">
+      <DependentUpon>CtlEliminarAsignacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlExportaDatos.ascx.designer.vb">
+      <DependentUpon>CtlExportaDatos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlExportaDatos.ascx.vb">
+      <DependentUpon>CtlExportaDatos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlExportaFormatos.ascx.designer.vb">
+      <DependentUpon>CtlExportaFormatos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlExportaFormatos.ascx.vb">
+      <DependentUpon>CtlExportaFormatos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlGrilla.ascx.designer.vb">
+      <DependentUpon>CtlGrilla.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlGrilla.ascx.vb">
+      <DependentUpon>CtlGrilla.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlImportarData.ascx.designer.vb">
+      <DependentUpon>CtlImportarData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlImportarData.ascx.vb">
+      <DependentUpon>CtlImportarData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlImportExcel.ascx.designer.vb">
+      <DependentUpon>CtlImportExcel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlImportExcel.ascx.vb">
+      <DependentUpon>CtlImportExcel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlLlamadas.ascx.designer.vb">
+      <DependentUpon>CtlLlamadas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlLlamadas.ascx.vb">
+      <DependentUpon>CtlLlamadas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlLlamando.ascx.designer.vb">
+      <DependentUpon>CtlLlamando.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlLlamando.ascx.vb">
+      <DependentUpon>CtlLlamando.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlLlamar.ascx.designer.vb">
+      <DependentUpon>CtlLlamar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlLlamar.ascx.vb">
+      <DependentUpon>CtlLlamar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlMensajeAlerta.ascx.designer.vb">
+      <DependentUpon>CtlMensajeAlerta.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlMensajeAlerta.ascx.vb">
+      <DependentUpon>CtlMensajeAlerta.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlMensajes.ascx.designer.vb">
+      <DependentUpon>CtlMensajes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlMensajes.ascx.vb">
+      <DependentUpon>CtlMensajes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlMenu.ascx.designer.vb">
+      <DependentUpon>CtlMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlMenu.ascx.vb">
+      <DependentUpon>CtlMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ctlMntDirecciones.ascx.designer.vb">
+      <DependentUpon>ctlMntDirecciones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ctlMntDirecciones.ascx.vb">
+      <DependentUpon>ctlMntDirecciones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlModificarAsignacion.ascx.designer.vb">
+      <DependentUpon>CtlModificarAsignacion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlModificarAsignacion.ascx.vb">
+      <DependentUpon>CtlModificarAsignacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlNPerfil.ascx.designer.vb">
+      <DependentUpon>CtlNPerfil.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlNPerfil.ascx.vb">
+      <DependentUpon>CtlNPerfil.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlNuevaDireccion.ascx.designer.vb">
+      <DependentUpon>CtlNuevaDireccion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlNuevaDireccion.ascx.vb">
+      <DependentUpon>CtlNuevaDireccion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlNuevaPromesas.ascx.designer.vb">
+      <DependentUpon>CtlNuevaPromesas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlNuevaPromesas.ascx.vb">
+      <DependentUpon>CtlNuevaPromesas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlNuevoGrupo.ascx.designer.vb">
+      <DependentUpon>CtlNuevoGrupo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlNuevoGrupo.ascx.vb">
+      <DependentUpon>CtlNuevoGrupo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlNuevoTelefono.ascx.designer.vb">
+      <DependentUpon>CtlNuevoTelefono.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlNuevoTelefono.ascx.vb">
+      <DependentUpon>CtlNuevoTelefono.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlPagos.ascx.designer.vb">
+      <DependentUpon>CtlPagos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlPagos.ascx.vb">
+      <DependentUpon>CtlPagos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlProv.ascx.designer.vb">
+      <DependentUpon>CtlProv.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlProv.ascx.vb">
+      <DependentUpon>CtlProv.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlReasignar.ascx.designer.vb">
+      <DependentUpon>CtlReasignar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlReasignar.ascx.vb">
+      <DependentUpon>CtlReasignar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlReasignarGestor.ascx.designer.vb">
+      <DependentUpon>CtlReasignarGestor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlReasignarGestor.ascx.vb">
+      <DependentUpon>CtlReasignarGestor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlTelefono.ascx.designer.vb">
+      <DependentUpon>CtlTelefono.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlTelefono.ascx.vb">
+      <DependentUpon>CtlTelefono.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlTxt.ascx.designer.vb">
+      <DependentUpon>CtlTxt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlTxt.ascx.vb">
+      <DependentUpon>CtlTxt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlValidaAcceso.ascx.designer.vb">
+      <DependentUpon>CtlValidaAcceso.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlValidaAcceso.ascx.vb">
+      <DependentUpon>CtlValidaAcceso.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\DefinirCondicion.ascx.designer.vb">
+      <DependentUpon>DefinirCondicion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\DefinirCondicion.ascx.vb">
+      <DependentUpon>DefinirCondicion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Gestion.ascx.designer.vb">
+      <DependentUpon>Gestion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Gestion.ascx.vb">
+      <DependentUpon>Gestion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\GestionCliente.ascx.designer.vb">
+      <DependentUpon>GestionCliente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\GestionCliente.ascx.vb">
+      <DependentUpon>GestionCliente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\GraficoIndicadores.ascx.designer.vb">
+      <DependentUpon>GraficoIndicadores.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\GraficoIndicadores.ascx.vb">
+      <DependentUpon>GraficoIndicadores.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Metas.ascx.designer.vb">
+      <DependentUpon>Metas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Metas.ascx.vb">
+      <DependentUpon>Metas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\MetasCobranzasAvances.ascx.designer.vb">
+      <DependentUpon>MetasCobranzasAvances.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\MetasCobranzasAvances.ascx.vb">
+      <DependentUpon>MetasCobranzasAvances.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\NAsignacion.ascx.designer.vb">
+      <DependentUpon>NAsignacion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\NAsignacion.ascx.vb">
+      <DependentUpon>NAsignacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\NConvenios.ascx.designer.vb">
+      <DependentUpon>NConvenios.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\NConvenios.ascx.vb">
+      <DependentUpon>NConvenios.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\NMCompromiso.ascx.designer.vb">
+      <DependentUpon>NMCompromiso.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\NMCompromiso.ascx.vb">
+      <DependentUpon>NMCompromiso.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\NMPagos.ascx.designer.vb">
+      <DependentUpon>NMPagos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\NMPagos.ascx.vb">
+      <DependentUpon>NMPagos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\NMUsuario.ascx.designer.vb">
+      <DependentUpon>NMUsuario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\NMUsuario.ascx.vb">
+      <DependentUpon>NMUsuario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\NuevaCartera.ascx.designer.vb">
+      <DependentUpon>NuevaCartera.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\NuevaCartera.ascx.vb">
+      <DependentUpon>NuevaCartera.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\NuevaCondicion.ascx.designer.vb">
+      <DependentUpon>NuevaCondicion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\NuevaCondicion.ascx.vb">
+      <DependentUpon>NuevaCondicion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\NuevaEmpresa.ascx.designer.vb">
+      <DependentUpon>NuevaEmpresa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\NuevaEmpresa.ascx.vb">
+      <DependentUpon>NuevaEmpresa.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\NuevoCLienteGestionarCliente.ascx.designer.vb">
+      <DependentUpon>NuevoCLienteGestionarCliente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\NuevoCLienteGestionarCliente.ascx.vb">
+      <DependentUpon>NuevoCLienteGestionarCliente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Pagos.ascx.designer.vb">
+      <DependentUpon>Pagos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Pagos.ascx.vb">
+      <DependentUpon>Pagos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\PagosCarteraCastigo.ascx.designer.vb">
+      <DependentUpon>PagosCarteraCastigo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\PagosCarteraCastigo.ascx.vb">
+      <DependentUpon>PagosCarteraCastigo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Popup.ascx.designer.vb">
+      <DependentUpon>Popup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Popup.ascx.vb">
+      <DependentUpon>Popup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ReporteCampoCartera.ascx.designer.vb">
+      <DependentUpon>ReporteCampoCartera.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ReporteCampoCartera.ascx.vb">
+      <DependentUpon>ReporteCampoCartera.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ReporteCartasCampo.ascx.designer.vb">
+      <DependentUpon>ReporteCartasCampo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ReporteCartasCampo.ascx.vb">
+      <DependentUpon>ReporteCartasCampo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ReporteClienteEmpresaDireccionTrabajo.ascx.designer.vb">
+      <DependentUpon>ReporteClienteEmpresaDireccionTrabajo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ReporteClienteEmpresaDireccionTrabajo.ascx.vb">
+      <DependentUpon>ReporteClienteEmpresaDireccionTrabajo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ReporteCobertura.ascx.designer.vb">
+      <DependentUpon>ReporteCobertura.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ReporteCobertura.ascx.vb">
+      <DependentUpon>ReporteCobertura.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ReporteComposicionCarteraGestor.ascx.designer.vb">
+      <DependentUpon>ReporteComposicionCarteraGestor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ReporteComposicionCarteraGestor.ascx.vb">
+      <DependentUpon>ReporteComposicionCarteraGestor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ReporteCompromisos.ascx.designer.vb">
+      <DependentUpon>ReporteCompromisos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ReporteCompromisos.ascx.vb">
+      <DependentUpon>ReporteCompromisos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ReporteCompromisosExternos.ascx.designer.vb">
+      <DependentUpon>ReporteCompromisosExternos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ReporteCompromisosExternos.ascx.vb">
+      <DependentUpon>ReporteCompromisosExternos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ReporteExternoGestionesRealizadas.ascx.designer.vb">
+      <DependentUpon>ReporteExternoGestionesRealizadas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ReporteExternoGestionesRealizadas.ascx.vb">
+      <DependentUpon>ReporteExternoGestionesRealizadas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ReporteGestionExterno.ascx.designer.vb">
+      <DependentUpon>ReporteGestionExterno.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ReporteGestionExterno.ascx.vb">
+      <DependentUpon>ReporteGestionExterno.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ReporteGestionInterno.ascx.designer.vb">
+      <DependentUpon>ReporteGestionInterno.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ReporteGestionInterno.ascx.vb">
+      <DependentUpon>ReporteGestionInterno.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ReporteInformacionCobertura.ascx.designer.vb">
+      <DependentUpon>ReporteInformacionCobertura.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ReporteInformacionCobertura.ascx.vb">
+      <DependentUpon>ReporteInformacionCobertura.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ReporteInternoGestionesRealizadas.ascx.designer.vb">
+      <DependentUpon>ReporteInternoGestionesRealizadas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ReporteInternoGestionesRealizadas.ascx.vb">
+      <DependentUpon>ReporteInternoGestionesRealizadas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ReportePagos.ascx.designer.vb">
+      <DependentUpon>ReportePagos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ReportePagos.ascx.vb">
+      <DependentUpon>ReportePagos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ReportePagosCarteraActiva.ascx.designer.vb">
+      <DependentUpon>ReportePagosCarteraActiva.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ReportePagosCarteraActiva.ascx.vb">
+      <DependentUpon>ReportePagosCarteraActiva.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ReporteProductoOperacionCliente.ascx.designer.vb">
+      <DependentUpon>ReporteProductoOperacionCliente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ReporteProductoOperacionCliente.ascx.vb">
+      <DependentUpon>ReporteProductoOperacionCliente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ReporteTrabajo.ascx.designer.vb">
+      <DependentUpon>ReporteTrabajo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ReporteTrabajo.ascx.vb">
+      <DependentUpon>ReporteTrabajo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ResultadoConsultaMontoCliente.ascx.designer.vb">
+      <DependentUpon>ResultadoConsultaMontoCliente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ResultadoConsultaMontoCliente.ascx.vb">
+      <DependentUpon>ResultadoConsultaMontoCliente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Tareas.ascx.designer.vb">
+      <DependentUpon>Tareas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Tareas.ascx.vb">
+      <DependentUpon>Tareas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\TipoCambio.ascx.designer.vb">
+      <DependentUpon>TipoCambio.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\TipoCambio.ascx.vb">
+      <DependentUpon>TipoCambio.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Usuario.ascx.designer.vb">
+      <DependentUpon>Usuario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Usuario.ascx.vb">
+      <DependentUpon>Usuario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlCamposBusqueda.ascx.designer.vb">
+      <DependentUpon>CtlCamposBusqueda.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlCamposBusqueda.ascx.vb">
+      <DependentUpon>CtlCamposBusqueda.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NuevoGrupo.ascx.designer.vb">
+      <DependentUpon>NuevoGrupo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoGrupo.ascx.vb">
+      <DependentUpon>NuevoGrupo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PortChat.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BE\BE.vbproj">
+      <Project>{D5F0BF87-9BA6-440C-8B03-C9ADFE287871}</Project>
+      <Name>BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BL\BL.vbproj">
+      <Project>{3EB3576B-C6E3-48F7-9C24-0A072786FF35}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConDB\ConDB.vbproj">
+      <Project>{2D525545-1C19-45BE-9EEF-0A3B47328A37}</Project>
+      <Name>ConDB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="obj\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50618</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
